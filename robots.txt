@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+Disallow: faq_files
+Disallow: index_files
