@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: 
+Allow:/
 Disallow: faq_files
 Disallow: index_files
