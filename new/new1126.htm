@@ -1,0 +1,573 @@
+<!--//Built by Softscape HTML Builder 3.0 http://www.ruanjing.com-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>B2B网站设计的十大技巧是什么？</title>
+<style>
+
+.title_index{ /*大标题样式*/
+	font-size: 26pt;
+	font-family: "微软雅黑";
+	color: #999966;
+	font-weight: bold;
+}
+.title_page{ /*题目样式*/
+	font-size: 14pt;
+	font-family: "微软雅黑";
+	color: #999966;
+	font-weight: bold;
+}
+.content{/*内容样式*/
+
+	font-size: 16px;
+	font-family: "微软雅黑";
+	line-height: 28px;	/*行距*/	
+}
+.content img {
+	margin: 7px;
+}
+.9{ font-size: 9pt }
+.TitleLinks{ /*索引列表的停靠方位*/
+	text-align: center;
+}
+.TitleLinks .content { /*索引页使用文字列表符时，修改行距*/
+	line-height: 20pt;
+}
+.TitleLinks .content img { /*索引页使用图形列表符时，修改行距*/
+	margin-top: 7px;
+	margin-bottom: 7px;	
+}
+A:link	{text-decoration: none; color:#0033CC}
+A:visited  {text-decoration: none; color: #0033CC}
+A:active {text-decoration: none; color: #0000ff }
+A:hover {text-decoration: underline; color: #FF0000 }
+.b1 {
+	background-image: url(images/BD00085_.GIF);
+	background-repeat: no-repeat;
+}
+.b2 {
+	background-image: url(images/BD00085_2.GIF);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+.dacont{margin-top: 20px;}
+.header, .nav{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+#nav-header a,
+#nav-header a:link,
+#nav-header a:visited {
+	color: #555555;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+#nav-header a:hover,
+#nav-header nav li:hover {
+	color: #ff8d00;
+}
+
+#nav-header {
+	background: #fff;
+	height:120px;
+	line-height: 120px;
+	border-bottom: 1px solid #e4e4e4;
+}
+#nav-header.fixed{
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;	
+}
+#nav-header h1 {
+	display: inline;
+}
+
+#nav-header .header {
+	width: 1200px;
+	margin: 0 auto;
+	background: #ccc;
+}
+
+#nav-header .logo {
+	width: 220px;
+	height: 110px;
+	margin-top: 10px;
+	float: left;
+	margin-right: 40px;
+}
+
+#nav-header .logo img {
+	display: block;
+	position: relative;
+	top: 14px;
+}
+
+#nav-header nav {
+	width:590px;
+	display: inline-block;
+	float: left;
+	margin-left: 10px;
+
+}
+
+#nav-header nav li {
+	color: #555;
+	list-style: none;
+	line-height: 80px;
+	padding-right: 46px;
+	text-decoration: none;
+	font-size: 18px;
+	float: left;
+	cursor: pointer;
+	position: relative;
+}
+
+#nav-header nav li:hover .slide-submeu {
+	display: block;
+}
+
+#nav-header nav li i.slide-icon {
+	transition: All 0.4s ease-in-out;
+	-webkit-transition: All 0.4s ease-in-out;
+	-moz-transition: All 0.4s ease-in-out;
+	-o-transition: All 0.4s ease-in-out;
+}
+
+#nav-header nav li:hover i.slide-icon {
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+}
+
+#nav-header nav li i.slide-icon {
+	background: url(./images/icon.png);
+	background-position: 0px -47px;
+	display: inline-block;
+	width: 11px;
+	margin-left: 5px;
+	height: 7px;
+}
+
+/*子菜单*/
+
+#nav-header .submenu {
+	position: absolute;
+	width: 210px;
+	font-size: 15px;
+	color: #333;
+	background: #fff;
+	z-index: 800;
+	padding: 14px 0;
+	right: 0;
+	top: 52px;
+	border-top: 1px solid #e0e0e0;
+	display: none;
+}
+
+#nav-header .submenu a {
+	line-height: 35px;
+	padding: 0 14px;
+	display: block;
+	font-size: 12px;
+}
+
+#nav-header .submenu a:hover {
+	background: #fafafa;
+}
+#nav-header .submenu a {
+	color: #333333;
+}
+
+/*user-slide*/
+
+#nav-header .slide-submeu {
+	position: absolute;
+	left: 3px;
+	top: 85px;
+	z-index: 1000;
+	width: 200px;
+	padding: 10px 0;
+	background: #fff;
+	border-top: 1px solid #E4E4E4;
+	box-shadow: -1px 3px 5px rgba(000, 000, 000, 0.3);
+	display: none;
+}
+
+#nav-header .careerpath .slide-submeu a {
+	line-height: 35px;
+}
+
+#nav-header .careerpath .slide-submeu a:nth-child(2n) {
+	background: #fff;
+}
+
+#nav-header .slide-submeu a {
+	display: block;
+	font-size: 14px;
+	line-height: 35px;
+	padding: 0px 15px;
+}
+
+#nav-header .zhiye-submenu a i {
+	display: inline-block;
+	float: left;
+	width: 28px;
+	height: 20px;
+	margin-top: 8px;
+	margin-right: 10px;
+}
+
+#nav-header .ymzixun{
+	width: 100px;
+}
+#nav-header .ymguojia{
+	width: 150px;
+}
+#nav-header .zhiye-submenu a i.sjc-icon {
+background: url(./images/ggq1.png);
+}
+
+#nav-header .zhiye-submenu a i.dmnk-icon {
+	background: url(./images/ggq3.png);
+
+}
+
+#nav-header .zhiye-submenu a i.glna-icon {
+	background: url(./images/ggq4.png);
+	margin-top: 7px;
+}
+
+#nav-header .zhiye-submenu a i.slxy-icon {
+	background: url(./images/ggq5.png);
+	margin-top: 8px;
+}
+
+#nav-header .zhiye-submenu a i.atg-icon {
+	background: url(./images/ggq2.png);
+	margin-top: 7px;
+}
+#nav-header .zhiye-submenu a i.heishan-icon {
+	background: url(./images/ggqhs.jpg);
+	margin-top: 7px;
+}
+#nav-header .zhiye-submenu a i.tuerqi-icon {
+	background: url(./images/ggq80.jpg);
+	margin-top: 7px;
+}
+
+#nav-header .zhiye-submenu a i.spls-icon {
+background: url(./images/ggq6.png);
+}
+
+#nav-header .zhiye-submenu a i.met-icon {
+background: url(./images/ggq7.png);
+margin-top: 7px;
+}
+
+
+#nav-header .zhiye-submenu a i.greece-icon {
+background: url(./images/gqs13.jpg);
+margin-top: 7px;
+}
+
+#nav-header .zhiye-submenu a i.teq-icon {
+background: url(./images/ggq8.png);
+margin-top: 7px;
+}
+
+#nav-header .zhiye-submenu i.wnat-icon {
+	background: url(./images/ggq9.png);
+	margin-top: 7px;
+}
+#nav-header .zhiye-submenu i.xby-icon {
+	background: url(./images/ggq15.png);
+	margin-top: 7px;
+}
+#nav-header .zhiye-submenu i.pty-icon {
+	background: url(./images/ggq16.png);
+	margin-top: 7px;
+}
+#nav-header .zhiye-submenu i.ael-icon {
+	background: url(./images/ggq17.png);
+	margin-top: 7px;
+}
+#nav-header .zhiye-submenu i.yingg-icon {
+	background: url(./images/ggq18.png);
+	margin-top: 7px;
+}
+
+#nav-header .zhiye-submenu i.canada-icon {
+	background: url(./images/ggq19.png);
+	margin-top: 7px;
+}
+
+#nav-header .qy-box i {
+	display: inline-block;
+	float: left;
+	width: 28px;
+	height: 20px;
+	margin-top: 8px;
+	margin-right: 10px;
+}
+
+
+
+#nav-header .qy-box i.jnybs-icon {
+	background: url(./images/ggq10.png);
+	margin-top: 7px;
+}
+
+.header-right{
+	width: 210px;
+	height: 120px;
+	float: left;
+	margin-left: 70px;
+	
+}
+.header-right p{
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.header-right .header-rexian{
+	width: 210px;
+	height: 35px;
+	padding-top: 15px;
+
+}
+/*.header-right .header-rexian img{
+	position: relative;
+	top:-5px;
+}*/
+.header-right .header-rexian p{
+	font-size: 24px;
+	color: #ff8d00;
+}
+.header-right .header-weixin{
+	width: 210px;
+	height: 30px;
+	font-size: 15px;
+	color: #868686;
+}
+.header-right .header-weixin p{
+	padding-left: 18px;
+	line-height: 24px;
+	padding-top: 5px;
+}
+#nav-header .header-erwm{
+	width: 80px;
+	height: 120px;
+	float: left;
+}
+#nav-header .header-erwm img{
+	width: 80px;
+	height:100px;
+	padding-top: 10px;
+}
+
+
+
+.bottomz{width:100%;height:370px;background:#2a2d31;color:#a8a7a7;margin-top: 50px;padding-top: 10px;}
+.bottomz_xm{width:1180px;height:110px;margin:0 auto;font-size:15px;line-height:25px;}
+.bottomz_xm h5{font-size:18px;color:#fff;margin-bottom:7px;}
+.bottomz_xm>p>a{color:#a8a7a7;margin:0px 30px 0px 0px;font-size:15px;}
+.bottomz_xm>p>a:hover{color:#fff;}
+.bottomz .bottomz_content{width:1180px;margin:0 auto;height:185px;}
+.bottomz .bottomz_left{float:left;width:280px;height:185px;border-right:1px solid #7a7a7d;}
+
+.bottomz .bottomz_left h4{line-height:30px;font-size:18px;color:#fff;margin-top:20px;font-weight: normal;}
+.bottomz .bottomz_left p{line-height:20px;font-size:26px;color:#fff;font-weight: normal;}
+.bottomz .bottomz_mid{float:left;width:460px;height:185px;border-right:1px solid #7a7a7d;margin-left:60px;}
+.bottomz .bottomz_mid h4{font-size:20px;color:#fff;margin-bottom:20px;}
+.bottomz .bottomz_mid p{font-size:15px;line-height:26px;}
+.bottomz .bottomz_mid p span{color:#fff;}
+
+.bottomz .bottomz_right{float:left;width:330px;height:150px;margin-left:40px;padding-top:10px;}
+.bottomz .bottomz_right div{width:165px;float: left;}
+.bottomz .bottomz_right div img{padding-left: 20px;}
+.bottomz .bottomz_right p{margin-top:12px;text-align: center;}
+
+.bottomz .bottomz_content>h2{text-align: center;}
+.bottomz_youqing{width:1180px;height:90px;margin:0 auto;margin-top:40px;}
+.bottomz_youqing span{color:#dad9d9;font-size:16px;}
+.bottomz_youqing a{color:#a8a7a7;margin-right:10px;font-size:15px;}
+.bottomz_youqing a:hover{color:#fff;}
+
+.banquanz{width:100%;height:60px;background:#1c1f22;margin-top: 20px;}
+.banquanz p{font-size:14px;text-align:center;line-height:60px;color:#8c8c8c;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+
+
+	<div id="nav-header">
+        <div class="header">
+          <h1>
+            <a href="https://www.kuaipai.me/" class="logo">
+              <img src="./images/logo.png" width="220" alt="网站优化,网络推广,新站优化,整站优化,快速排名">
+            </a>
+          </h1>
+          <nav style="width:550px;">
+            <ul>
+              <li>
+                <a href="https://www.kuaipai.me/" class="home">首页</a>
+              </li>
+              <li class="careerpath">
+                <a href="https://www.kuaipai.me/faq.html" target="_blank">常见问题</a></i>
+                
+              </li>
+              <li>
+                <a href="tencent://message/?uin=9112761&Menu=yes" target="_blank">在线客服</a>
+                
+           
+              </li>
+
+              </li>
+              </li>
+
+            </ul>
+          </nav>
+
+
+            <div class="header-erwm">
+              <img src="./images/kefu123.jpg">
+            </div>
+          </div>
+
+        </div>
+
+
+
+<div align="center" class="dacont">
+<center>
+<table border="0" cellpadding="0" cellspacing="0" width="1200px">
+	<tr> 
+	<td width="90%" bgcolor="#000000"><table border="0" cellspacing="0" width="100%"
+	    cellpadding="0" height="293">
+	<tr bgcolor="#f5f5f5"> 
+	<td width="100%" class="b1"><DIV class="content"> 
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr> 
+	<td height="246" valign="top" class="b2"><table width="100%" height="361" border="0" cellpadding="0" cellspacing="0">
+	<tr> 
+	<td width="9%" height="31">&nbsp;</td>
+	<td width="82%" valign="bottom"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="9">
+	<tr> 
+	<td width="65%" height="12" align="right">&nbsp;</td>
+	</tr>
+	</table></td>
+	<td width="9%">&nbsp;</td>
+	</tr>
+	<tr> 
+	<td height="283">&nbsp;</td>
+	<td valign="top" class="content"><div align="center" class="title_page"><br>
+	B2B网站设计的十大技巧是什么？</div>
+	<p><!--HTMLBUILERPART0-->　　根据美国国税局(IRS)的数据，目前全球有520万家B2B企业，这是多么庞大的数额。然而，它确实体现出了一些相当令人担忧的问题，首先，市场上有这么多的公司，为什么我们只能说出这么少的名字?<BR><BR> 
+　　对营销的最小关注仍然是如此多的B2B网站在灰色地带的发展。虽然一些促销策略可能会花很多钱，但是其他的策略相对便宜和直接。<BR><BR> 
+　　对于B2B公司来说，网页设计是在数百个相似的网站中脱颖而出的好方法。问题是-　 B2B网站设计的概念甚至不应该是昂贵的，它必须是舒适的，所有的功能都是有意义的。这甚至是当地企业也能负担得起的。<BR><BR> 
+　　1、了解用户流程<BR><BR> 
+　　在B2B中，企业很少追求品牌知名度本身的目标，更重要的是将你的访问者转化为潜在客户和买家。不管你的目标是什么，联系、电话或销售，你都应该知道用户需要什么才能达到目标，并考虑帮助他们达到目标的最佳方式。<BR><BR> 
+　　2、使用面包屑导航<BR><BR> 
+　　有不同的工具和设计方法来安排用户浏览网站的方式，对于提供大量服务的B2B网站，面包屑导航是最好的解决方案。<BR><BR> 
+　　快速总结：面包屑导航起源于童话故事Hansel和Gretel，就像在故事中一样，breadcrumb(在本例中是以前页面的列表)帮助用户跟踪网站上的所有移动，以便他们可以随时返回到任何页面。<BR><BR> 
+　　3、遵循“黄金比例”<BR><BR> 
+　　对于那些在设计或艺术理论方面没有太多经验的人，这里有一个“黄金比例”的简要介绍。科学家们在没有深入研究其背后的数学原理的情况下，一度计算出了一个具有美感的完美矩形的参数——它的长度必须等于其宽度的1.6倍，300×485像素矩形就可以被认为是完美的。<BR><BR> 
+　　4、使用进度条指示页面的加载状态<BR><BR> 
+　　现在一个众所周知的事实是，页面加载时间太长可能会让用户失去动力。然而，即使你的网站还没有达到火箭速度，也不应该意味着你必须失去访问者。<BR><BR> 
+　　解决这种情况的可靠方法是通知用户加载页面的进度，你可以通过设置最简单的进度条来实现这一点，这些进度条不会让你的网站慢下来，也可以让用户放心，他们不会白白等待。<BR><BR> 
+　　5、保持核心数据在第一个滚动<BR><BR> 
+　　尼尔森诺曼集团(Nielsen Norman　 Group)的研究显示，74%的用户注意力集中在网站的前两卷内容上。事实上，只有6-8%的人有足够的兴趣、时间或精力从头到尾阅读页面内容。<BR><BR> 
+　　对于网页设计师来说，这里的教训在于内容的优先级。虽然你的页面应该从一个介绍开始，然后慢慢滑到一个CTA　 (call-to-action)，这似乎是合乎逻辑的，但事实并非如此。确保在第一卷中展示所有商品——最好的功能，最方便的建议。一旦你用最吸引人的报价吸引了认真的买家，他们会进一步阅读你的其他信息，这样可以节省访问者的时间并获得更多的线索。<BR><BR> 
+　　6、在用户完成一个重要的操作之后使用谢谢页面<BR><BR> 
+　　无论在现实生活中还是在网上，说“谢谢”似乎都是微不足道的细节。然而，在这两种情况下，赢得别人的信任和给人一个好的外表态度可能是至关重要的。当涉及到网站设计时，感谢页面会做一些重要的事情：<BR><BR> 
+　　增加了一点个性化，用户并不仅仅是你的百度分析中的一个数字，或者是你底线的一个销售，一点点人类的感激会让每个人感到特别和被关心。<BR><BR> 
+　　提高品牌知名度，你可以用一种创意性的、令人难忘的风格来设计你的“谢谢”页面。这将是一个惊喜，并给用户另一个机会记住你。<BR><BR> 
+　　状态跟踪，如果用户下载了一本电子书或白皮书，订阅了一份时事通讯，或者留下了一条消息，那么让他们知道这个操作成功是很重要的。将访问者重定向到谢谢”页面是一种表示“一切正常”的方式。<BR><BR> 
+　　7、概述主要及次要的行动召唤(CTA)<BR><BR> 
+　　作为面向转换的页面(将用户引向特定目标)的创建者，有一个“最期望的结果”的原则。要详细说明，页面上可以有几个动作调用，但是其中一个调用显然比其他调用更重要。<BR><BR> 
+　　如果这是你的网站的情况，考虑清楚地区分最需要的CTA。这可以通过更改CTA本身的位置或指向下一步的按钮的大小来实现。<BR><BR> 
+　　区分不同的CTAs允许您引导用户获得最期望的结果，而不会将他们的选择限制在一个选项上。<BR><BR> 
+　　8、更改已访问链接的颜色<BR><BR> 
+　　任何让你的网站的访问者难以理解的行为都已经让网站本身变得不那么友好了，为了确保每一页都尽可能使用舒适，你必须注意细节。<BR><BR> 
+　　被访问链接的颜色是那些小细节之一，这些小细节对轻松地传递重要信息大有帮助。一个最被低估的设计细节，知道他们已经看到了一个页面可以帮助用户避免恼人的?似曾相识?效果。<BR><BR> 
+　　在为这篇博客文章做研究时，我们点击了尼尔森·诺曼(Nielsen　 Norman)团队一位作者的个人资料页面。当链接变成紫色时，我们很方便地看到我们已经访问了它(见上图)。<BR><BR> 
+　　9、充分利用404页面<BR><BR> 
+　　当您的网站出现错误时，第一个冲动是进入技术细节，这样您就可以解释代码中出现了什么错误。然而，就像量子物理学一样，高级编码并不容易理解。因此，您不应该使用它来解释错误。<BR><BR> 
+　　相反，用清晰的语言来沟通错误。即使您没有完全解释问题，用户至少也会理解发生了什么。有一些方法可以处理404页面：<BR><BR> 
+　　是创意性的，如果网站上有错误，为什么不利用这个不幸的情况开几个玩笑呢?这将显示个性，并可能减轻用户对错误的挫败感。<BR><BR> 
+　　是建设性的，如果有些东西不工作，解释用户应该做什么，以及如何解决问题。<BR><BR> 
+　　无论您选择哪一个，都不要隐藏在代码和模棱两可的短语后面，例如：“亲爱的用户，这里有一个错误#5505”。在上图中，TechCrunch是404s中健康、建设性对话的一个例子。<BR><BR> 
+　　10、使用块和表来构造信息<BR><BR> 
+　　将内容组织成块和表是确保用户阅读您的副本的好方法，通过这种方式可以完成很多事情——首先，页面不再那么长了(还记得我们从长页面中学到了什么吗?)此外，对于任何需要比较的内容，表格都是一个很好的表示。正因为如此，他们现在正乘势而上。<!--/HTMLBUILERPART0--> <br>
+	<br>
+	</p></td>
+	<td>&nbsp;</td>
+	</tr>
+	<tr> 
+	<td height="47">&nbsp;</td>
+	<td><table width="100%" border="0" cellpadding="0" cellspacing="0" class="9">
+	<tr> 
+	<td align="right"><a href="new1125.htm">上一页</a> <a href="index.html">目录页</a> <a href="new1127.htm">下一页</a></td>
+	<td width="150">&nbsp;</td>
+	</tr>
+	</table> 
+	<span class="9"><font color="#CCCCCC">创建时间：2020/9/23 </font></span></td>
+	<td>&nbsp;</td>
+	</tr>
+	</table></td>
+	</tr>
+	</table>
+	</div></td>
+	</tr>
+	</table></td>
+	</tr>
+</table>
+</center>
+</div>
+
+<!-- 底部开始 -->
+<div class="bottomz">
+  <div class="bottomz_xm">
+   <h5>热门城市:</h5>
+   <p>
+  <a href="https://www.kuaipai.me/seo_beijing/" title="北京网站推广" target="_blank">北京网站推广</a>
+  <a href="https://www.kuaipai.me/seo_shanghai/" title="上海网站推广" target="_blank">上海网站推广</a>
+  <a href="https://www.kuaipai.me/seo_guangzhou/" title="广州网站推广" target="_blank">广州网站推广</a>
+  <a href="https://www.kuaipai.me/seo_wuhan/" title="武汉网站推广" target="_blank">武汉网站推广</a>
+  <a href="https://www.kuaipai.me/seo_changsha/" title="长沙网站推广" target="_blank">长沙网站推广</a>
+  <a href="https://www.kuaipai.me/seo_xian/" title="西安网站推广" target="_blank">西安网站推广</a>
+
+  
+
+</p>
+  </div>
+    <div class="bottomz_content">
+      <div class="bottomz_left">
+        <img src="./images/logoxxx.png" title="网站推广" alt="网站推广">
+        <h4><span> <img src="./images/iph_03.png" title="网站推广" alt="网站推广"></span>  咨询热线</h4>
+        <p>17771822077</p>
+      </div>
+      <div class="bottomz_mid">
+        <h4>联系我们</h4>
+        <p><span>北京市朝阳区崔各庄乡南春路92号</span><br>
+                           电话：17771822077<br>
+              
+                          网址：www.kuaipai.me</p>
+      </div>
+      <div class="bottomz_right">
+        
+      </div>
+    </div>
+
+    <div class="banquanz">
+    <p></p>
+    </div>
+  </div>
+</body>
+</html>

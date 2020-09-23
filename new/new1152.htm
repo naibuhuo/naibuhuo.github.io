@@ -1,0 +1,566 @@
+<!--//Built by Softscape HTML Builder 3.0 http://www.ruanjing.com-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>google京东SEO与淘宝SEO优化方案</title>
+<style>
+
+.title_index{ /*大标题样式*/
+	font-size: 26pt;
+	font-family: "微软雅黑";
+	color: #999966;
+	font-weight: bold;
+}
+.title_page{ /*题目样式*/
+	font-size: 14pt;
+	font-family: "微软雅黑";
+	color: #999966;
+	font-weight: bold;
+}
+.content{/*内容样式*/
+
+	font-size: 16px;
+	font-family: "微软雅黑";
+	line-height: 28px;	/*行距*/	
+}
+.content img {
+	margin: 7px;
+}
+.9{ font-size: 9pt }
+.TitleLinks{ /*索引列表的停靠方位*/
+	text-align: center;
+}
+.TitleLinks .content { /*索引页使用文字列表符时，修改行距*/
+	line-height: 20pt;
+}
+.TitleLinks .content img { /*索引页使用图形列表符时，修改行距*/
+	margin-top: 7px;
+	margin-bottom: 7px;	
+}
+A:link	{text-decoration: none; color:#0033CC}
+A:visited  {text-decoration: none; color: #0033CC}
+A:active {text-decoration: none; color: #0000ff }
+A:hover {text-decoration: underline; color: #FF0000 }
+.b1 {
+	background-image: url(images/BD00085_.GIF);
+	background-repeat: no-repeat;
+}
+.b2 {
+	background-image: url(images/BD00085_2.GIF);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+.dacont{margin-top: 20px;}
+.header, .nav{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+#nav-header a,
+#nav-header a:link,
+#nav-header a:visited {
+	color: #555555;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+#nav-header a:hover,
+#nav-header nav li:hover {
+	color: #ff8d00;
+}
+
+#nav-header {
+	background: #fff;
+	height:120px;
+	line-height: 120px;
+	border-bottom: 1px solid #e4e4e4;
+}
+#nav-header.fixed{
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;	
+}
+#nav-header h1 {
+	display: inline;
+}
+
+#nav-header .header {
+	width: 1200px;
+	margin: 0 auto;
+	background: #ccc;
+}
+
+#nav-header .logo {
+	width: 220px;
+	height: 110px;
+	margin-top: 10px;
+	float: left;
+	margin-right: 40px;
+}
+
+#nav-header .logo img {
+	display: block;
+	position: relative;
+	top: 14px;
+}
+
+#nav-header nav {
+	width:590px;
+	display: inline-block;
+	float: left;
+	margin-left: 10px;
+
+}
+
+#nav-header nav li {
+	color: #555;
+	list-style: none;
+	line-height: 80px;
+	padding-right: 46px;
+	text-decoration: none;
+	font-size: 18px;
+	float: left;
+	cursor: pointer;
+	position: relative;
+}
+
+#nav-header nav li:hover .slide-submeu {
+	display: block;
+}
+
+#nav-header nav li i.slide-icon {
+	transition: All 0.4s ease-in-out;
+	-webkit-transition: All 0.4s ease-in-out;
+	-moz-transition: All 0.4s ease-in-out;
+	-o-transition: All 0.4s ease-in-out;
+}
+
+#nav-header nav li:hover i.slide-icon {
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+}
+
+#nav-header nav li i.slide-icon {
+	background: url(./images/icon.png);
+	background-position: 0px -47px;
+	display: inline-block;
+	width: 11px;
+	margin-left: 5px;
+	height: 7px;
+}
+
+/*子菜单*/
+
+#nav-header .submenu {
+	position: absolute;
+	width: 210px;
+	font-size: 15px;
+	color: #333;
+	background: #fff;
+	z-index: 800;
+	padding: 14px 0;
+	right: 0;
+	top: 52px;
+	border-top: 1px solid #e0e0e0;
+	display: none;
+}
+
+#nav-header .submenu a {
+	line-height: 35px;
+	padding: 0 14px;
+	display: block;
+	font-size: 12px;
+}
+
+#nav-header .submenu a:hover {
+	background: #fafafa;
+}
+#nav-header .submenu a {
+	color: #333333;
+}
+
+/*user-slide*/
+
+#nav-header .slide-submeu {
+	position: absolute;
+	left: 3px;
+	top: 85px;
+	z-index: 1000;
+	width: 200px;
+	padding: 10px 0;
+	background: #fff;
+	border-top: 1px solid #E4E4E4;
+	box-shadow: -1px 3px 5px rgba(000, 000, 000, 0.3);
+	display: none;
+}
+
+#nav-header .careerpath .slide-submeu a {
+	line-height: 35px;
+}
+
+#nav-header .careerpath .slide-submeu a:nth-child(2n) {
+	background: #fff;
+}
+
+#nav-header .slide-submeu a {
+	display: block;
+	font-size: 14px;
+	line-height: 35px;
+	padding: 0px 15px;
+}
+
+#nav-header .zhiye-submenu a i {
+	display: inline-block;
+	float: left;
+	width: 28px;
+	height: 20px;
+	margin-top: 8px;
+	margin-right: 10px;
+}
+
+#nav-header .ymzixun{
+	width: 100px;
+}
+#nav-header .ymguojia{
+	width: 150px;
+}
+#nav-header .zhiye-submenu a i.sjc-icon {
+background: url(./images/ggq1.png);
+}
+
+#nav-header .zhiye-submenu a i.dmnk-icon {
+	background: url(./images/ggq3.png);
+
+}
+
+#nav-header .zhiye-submenu a i.glna-icon {
+	background: url(./images/ggq4.png);
+	margin-top: 7px;
+}
+
+#nav-header .zhiye-submenu a i.slxy-icon {
+	background: url(./images/ggq5.png);
+	margin-top: 8px;
+}
+
+#nav-header .zhiye-submenu a i.atg-icon {
+	background: url(./images/ggq2.png);
+	margin-top: 7px;
+}
+#nav-header .zhiye-submenu a i.heishan-icon {
+	background: url(./images/ggqhs.jpg);
+	margin-top: 7px;
+}
+#nav-header .zhiye-submenu a i.tuerqi-icon {
+	background: url(./images/ggq80.jpg);
+	margin-top: 7px;
+}
+
+#nav-header .zhiye-submenu a i.spls-icon {
+background: url(./images/ggq6.png);
+}
+
+#nav-header .zhiye-submenu a i.met-icon {
+background: url(./images/ggq7.png);
+margin-top: 7px;
+}
+
+
+#nav-header .zhiye-submenu a i.greece-icon {
+background: url(./images/gqs13.jpg);
+margin-top: 7px;
+}
+
+#nav-header .zhiye-submenu a i.teq-icon {
+background: url(./images/ggq8.png);
+margin-top: 7px;
+}
+
+#nav-header .zhiye-submenu i.wnat-icon {
+	background: url(./images/ggq9.png);
+	margin-top: 7px;
+}
+#nav-header .zhiye-submenu i.xby-icon {
+	background: url(./images/ggq15.png);
+	margin-top: 7px;
+}
+#nav-header .zhiye-submenu i.pty-icon {
+	background: url(./images/ggq16.png);
+	margin-top: 7px;
+}
+#nav-header .zhiye-submenu i.ael-icon {
+	background: url(./images/ggq17.png);
+	margin-top: 7px;
+}
+#nav-header .zhiye-submenu i.yingg-icon {
+	background: url(./images/ggq18.png);
+	margin-top: 7px;
+}
+
+#nav-header .zhiye-submenu i.canada-icon {
+	background: url(./images/ggq19.png);
+	margin-top: 7px;
+}
+
+#nav-header .qy-box i {
+	display: inline-block;
+	float: left;
+	width: 28px;
+	height: 20px;
+	margin-top: 8px;
+	margin-right: 10px;
+}
+
+
+
+#nav-header .qy-box i.jnybs-icon {
+	background: url(./images/ggq10.png);
+	margin-top: 7px;
+}
+
+.header-right{
+	width: 210px;
+	height: 120px;
+	float: left;
+	margin-left: 70px;
+	
+}
+.header-right p{
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.header-right .header-rexian{
+	width: 210px;
+	height: 35px;
+	padding-top: 15px;
+
+}
+/*.header-right .header-rexian img{
+	position: relative;
+	top:-5px;
+}*/
+.header-right .header-rexian p{
+	font-size: 24px;
+	color: #ff8d00;
+}
+.header-right .header-weixin{
+	width: 210px;
+	height: 30px;
+	font-size: 15px;
+	color: #868686;
+}
+.header-right .header-weixin p{
+	padding-left: 18px;
+	line-height: 24px;
+	padding-top: 5px;
+}
+#nav-header .header-erwm{
+	width: 80px;
+	height: 120px;
+	float: left;
+}
+#nav-header .header-erwm img{
+	width: 80px;
+	height:100px;
+	padding-top: 10px;
+}
+
+
+
+.bottomz{width:100%;height:370px;background:#2a2d31;color:#a8a7a7;margin-top: 50px;padding-top: 10px;}
+.bottomz_xm{width:1180px;height:110px;margin:0 auto;font-size:15px;line-height:25px;}
+.bottomz_xm h5{font-size:18px;color:#fff;margin-bottom:7px;}
+.bottomz_xm>p>a{color:#a8a7a7;margin:0px 30px 0px 0px;font-size:15px;}
+.bottomz_xm>p>a:hover{color:#fff;}
+.bottomz .bottomz_content{width:1180px;margin:0 auto;height:185px;}
+.bottomz .bottomz_left{float:left;width:280px;height:185px;border-right:1px solid #7a7a7d;}
+
+.bottomz .bottomz_left h4{line-height:30px;font-size:18px;color:#fff;margin-top:20px;font-weight: normal;}
+.bottomz .bottomz_left p{line-height:20px;font-size:26px;color:#fff;font-weight: normal;}
+.bottomz .bottomz_mid{float:left;width:460px;height:185px;border-right:1px solid #7a7a7d;margin-left:60px;}
+.bottomz .bottomz_mid h4{font-size:20px;color:#fff;margin-bottom:20px;}
+.bottomz .bottomz_mid p{font-size:15px;line-height:26px;}
+.bottomz .bottomz_mid p span{color:#fff;}
+
+.bottomz .bottomz_right{float:left;width:330px;height:150px;margin-left:40px;padding-top:10px;}
+.bottomz .bottomz_right div{width:165px;float: left;}
+.bottomz .bottomz_right div img{padding-left: 20px;}
+.bottomz .bottomz_right p{margin-top:12px;text-align: center;}
+
+.bottomz .bottomz_content>h2{text-align: center;}
+.bottomz_youqing{width:1180px;height:90px;margin:0 auto;margin-top:40px;}
+.bottomz_youqing span{color:#dad9d9;font-size:16px;}
+.bottomz_youqing a{color:#a8a7a7;margin-right:10px;font-size:15px;}
+.bottomz_youqing a:hover{color:#fff;}
+
+.banquanz{width:100%;height:60px;background:#1c1f22;margin-top: 20px;}
+.banquanz p{font-size:14px;text-align:center;line-height:60px;color:#8c8c8c;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+
+
+	<div id="nav-header">
+        <div class="header">
+          <h1>
+            <a href="https://www.kuaipai.me/" class="logo">
+              <img src="./images/logo.png" width="220" alt="网站优化,网络推广,新站优化,整站优化,快速排名">
+            </a>
+          </h1>
+          <nav style="width:550px;">
+            <ul>
+              <li>
+                <a href="https://www.kuaipai.me/" class="home">首页</a>
+              </li>
+              <li class="careerpath">
+                <a href="https://www.kuaipai.me/faq.html" target="_blank">常见问题</a></i>
+                
+              </li>
+              <li>
+                <a href="tencent://message/?uin=9112761&Menu=yes" target="_blank">在线客服</a>
+                
+           
+              </li>
+
+              </li>
+              </li>
+
+            </ul>
+          </nav>
+
+
+            <div class="header-erwm">
+              <img src="./images/kefu123.jpg">
+            </div>
+          </div>
+
+        </div>
+
+
+
+<div align="center" class="dacont">
+<center>
+<table border="0" cellpadding="0" cellspacing="0" width="1200px">
+	<tr> 
+	<td width="90%" bgcolor="#000000"><table border="0" cellspacing="0" width="100%"
+	    cellpadding="0" height="293">
+	<tr bgcolor="#f5f5f5"> 
+	<td width="100%" class="b1"><DIV class="content"> 
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr> 
+	<td height="246" valign="top" class="b2"><table width="100%" height="361" border="0" cellpadding="0" cellspacing="0">
+	<tr> 
+	<td width="9%" height="31">&nbsp;</td>
+	<td width="82%" valign="bottom"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="9">
+	<tr> 
+	<td width="65%" height="12" align="right">&nbsp;</td>
+	</tr>
+	</table></td>
+	<td width="9%">&nbsp;</td>
+	</tr>
+	<tr> 
+	<td height="283">&nbsp;</td>
+	<td valign="top" class="content"><div align="center" class="title_page"><br>
+	google京东SEO与淘宝SEO优化方案</div>
+	<p><!--HTMLBUILERPART0-->　　大家都知道的网购平台(京东、淘宝)，这么大的网购平台根本不把百度放在眼里，有去分析的站长都清楚，这两家都屏蔽了搜索引擎抓取，品牌摆在那里，用户自然来，流量就不是事。以下从快排么的角度，分析京东seo为何比淘宝做得好。<BR><BR> 
+　　Robots协议<BR><BR> 
+　　淘宝：从下图可以看出，淘宝是有多恨百度啊，非要二次重复屏蔽百度蜘蛛的抓取，但百度也不遵守规则，这么大个平台，里面有好多好东西，不拿白不拿，不管你让不让我进去，我都要进去瞧个究竟。<BR><BR> 
+　　京东：还是京东比较理智，在门口立一块牌子，有指名道姓，不允许谁进来，即使进来了，也有说明那些东西不能看不能拿。<BR><BR> 
+　　页面结构<BR><BR> 
+　　在京东与淘宝的找“男装”，京东的url淘宝的url，这里就可以看出京东略胜一筹。<BR><BR> 
+　　从具体产品页面看，京东url，搜索引擎优化做到极致了。从选择尺寸上来看，每一种尺寸京东都做到不一样的url，这些细节京东完胜淘宝。<BR><BR> 
+　　标题写法<BR><BR> 
+　　淘宝的title写法直接调用产品标题，京东标题写法+该产品的(行情、报价、价格、评测)，可以做用户最想了解该产品的相关长尾关键词排名。从这一点京东又略胜淘宝。<BR><BR> 
+　　淘宝标题写法<BR><BR> 
+　　京东标题写法<BR><BR> 
+　　好了，由于时间关系，先写这么多，有时间会继续给大家提供更详细更多的内容。希望大家继续关注。<BR><BR> 
+　　google、百度SEO排名和淘宝SEO排名的相同点和区别是什么?<BR><BR> 
+　　google、百度和淘宝，其实都是搜索引擎，都依赖搜索引擎对海量的信息，进行排序。只是谷歌和百度的针对的人群会更广泛，而淘宝针对的人群就是一种，需要在网上购物的人。其实还有很多人不明白这些搜索引擎的区别，更有一些培训机构打着淘宝SEO培训的名号，教给学员的却是百度和谷歌的方法，这样其实很不科学的，有时候甚至会得到适得其反的效果。虽然大家都是搜索引擎，但他们还是有一些相同点和不同点的。那么，<BR><BR> 
+　　google、百度SEO排名和淘宝SEO排名有什么相同点和不同点呢?<BR><BR> 
+　　网站SEO和淘宝SEO的相同点：<BR><BR> 
+　　第一、优化目的一样<BR><BR> 
+　　无论是谷歌、百度(统称”网站“)或是淘宝的优化，目的都是为了提高排名和转化。SEO，顾名思义就是搜索引擎优化，这个过程实际上就像是在和搜索引擎“谈恋爱”。只有得到搜索引擎青睐的商品(或网站)，搜索引擎才会提高该商品(网站)的排名，进而提升流量。当然，最终的目的只有一个，提高转化率。<BR><BR> 
+　　第二、优化核心原则一样<BR><BR> 
+　　无论是谷歌、百度或是淘宝，他们的发展都经历了一个“由不关注用户体验到关注用户体验”的过程。熟悉网站SEO的人员应该知道，之前seo优化方法很流行靠做外链、作伪原创、关键词堆砌等“灰帽”手法把网站排名做上去，这种手法是为了做排名而优化的，毫不关注用户体验。可是这种方法到现在还管用吗?很明显，这些方法的作用正在逐渐减弱，甚至做的不好就会有适得其反的效果。因为搜索引擎的侧重点转移到了用户体验上了。如果一个网站用户体验做不好，即使有排名了，也会很快掉下来的。同样，淘宝搜索引擎也是一样，很多从事淘宝行业的人都盛行“刷单”、”刷信誉“这个手法，因为之前的淘宝就是一个“信誉销量为王”的时代，只要销量够高了，信誉够高了，排名自然就上去了，丝毫不会去留意卖家的产品质量是否合格、是否尊重消费者的权益。可是淘宝经过几年的优化和整理，淘宝搜索引擎正在逐渐完善，”刷单“的作用正在逐渐减弱，甚至有些卖家称，越刷越没流量，信誉的作用也几乎可以忽略。”个性化搜索“就是淘宝推出的专门针对提高用户体验而进行的措施。<BR><BR> 
+　　第三，搜索引擎的算法一直都在变<BR><BR> 
+　　这个很好理解，谷歌百度和淘宝的搜索引擎一直都变，今天适用的技术，可能明天因为搜索引擎的算法调整，就不能用了。不过我们只要抓住优化目的和核心原则就不会错了，这里不做赘述。<BR><BR> 
+　　google、百度SEO排名和淘宝SEO排名的区别：<BR><BR> 
+　　第一、优化方法不一样<BR><BR> 
+　　网站方面，虽然外链、伪原创和关键词密度等方法的作用正在逐渐减弱，但不可否认，这些方法还在生效。当然，除了这些，网站优化方法还包括：内外链关键词布局、H1到H6/title/deion/keywords/alt/strong等标签的设置、w3c标准、页面URL静态化处理、内容新鲜度、nofollow的设置等等，由于篇幅有限，不再一一列举。网站优化需要很全面的、很综合的技术。而淘宝SEO的方法主要有：标题关键词布局、上下架优化、橱窗推荐、动态评分、收藏量、销量、页面装修、加入各项买家卖家服务、商品评价等。淘宝优化的时候，可以放很多图片，”一图胜千言“，但是网站上你放很多图片，未见得就是一件好事!淘宝的优化虽然技术上要求没有网站优化高，但是作为一个店铺的运营者，同样需要很综合的能力。<BR><BR> 
+　　第二、优化难度不一样<BR><BR> 
+　　个人感觉网站优化要比淘宝优化要难一些。举个例子，淘宝零销量的宝贝(注意，是零销量)，可以新上架期间，利用上下架设置、标题优化和橱窗推荐等方法，将宝贝排名迅速提升，当然，这个排名只是暂时的，要想长久稳定的获得排名，还得靠全面综合的方法优化。网站方面，你要想在一个月内将一个新站优化到首页，个人感觉不太现实，即使你在短时间内获得大量外链、填充大量内容，这样做只会让搜索引擎更加怀疑你的网站。一个新站，除了靠”黑帽“，还会用什么方法获得如此丰富的资源?<BR><BR> 
+　　第三、用户满足点不一样(或者说，用户浏览深度不一样)<BR><BR> 
+　　同时做过网站SEO和淘宝SEO的人就会有这样的体验：网站的PV(页面浏览数)和用户停留时间会比淘宝上的要多。这是为什么呢?购物者都有这样的心里，购物要”货比三家“。现在淘宝商品同质化现象非常严重，一个商品，可能有成千上百个卖家和你同时竞争，如果商品描述不够突出卖点，买家很容易就会跳失，除非你在描述页上多放一些关联的商品，尽量减少跳出率，这个方法的作用毕竟是有限的。一般的做淘宝的页面平均停留时间能达到3-4分钟是很了不起的了(如果你的商品特别满足买家需求，那就不能用这个标准了)。但是从网站来的用户就不一样，这些用户在搜索引擎通过精准搜索进来的，属于高质量的流量。这些流量一般会在页面上停留很长时间。<BR><BR> 
+　　从以上可以看出，网站SEO排名和淘宝SEO排名是既有相同点又有区别的，当然，不同的地方是更多的。如果只片面看到他们的不同点或者相同点，都是片面的。我们只有了解熟悉他们的排名相关因素才能更多的做好SEO。<!--/HTMLBUILERPART0--> <br>
+	<br>
+	</p></td>
+	<td>&nbsp;</td>
+	</tr>
+	<tr> 
+	<td height="47">&nbsp;</td>
+	<td><table width="100%" border="0" cellpadding="0" cellspacing="0" class="9">
+	<tr> 
+	<td align="right"><a href="new1151.htm">上一页</a> <a href="index.html">目录页</a> <a href="new1153.htm">下一页</a></td>
+	<td width="150">&nbsp;</td>
+	</tr>
+	</table> 
+	<span class="9"><font color="#CCCCCC">创建时间：2020/9/23 </font></span></td>
+	<td>&nbsp;</td>
+	</tr>
+	</table></td>
+	</tr>
+	</table>
+	</div></td>
+	</tr>
+	</table></td>
+	</tr>
+</table>
+</center>
+</div>
+
+<!-- 底部开始 -->
+<div class="bottomz">
+  <div class="bottomz_xm">
+   <h5>热门城市:</h5>
+   <p>
+  <a href="https://www.kuaipai.me/seo_beijing/" title="北京网站推广" target="_blank">北京网站推广</a>
+  <a href="https://www.kuaipai.me/seo_shanghai/" title="上海网站推广" target="_blank">上海网站推广</a>
+  <a href="https://www.kuaipai.me/seo_guangzhou/" title="广州网站推广" target="_blank">广州网站推广</a>
+  <a href="https://www.kuaipai.me/seo_wuhan/" title="武汉网站推广" target="_blank">武汉网站推广</a>
+  <a href="https://www.kuaipai.me/seo_changsha/" title="长沙网站推广" target="_blank">长沙网站推广</a>
+  <a href="https://www.kuaipai.me/seo_xian/" title="西安网站推广" target="_blank">西安网站推广</a>
+
+  
+
+</p>
+  </div>
+    <div class="bottomz_content">
+      <div class="bottomz_left">
+        <img src="./images/logoxxx.png" title="网站推广" alt="网站推广">
+        <h4><span> <img src="./images/iph_03.png" title="网站推广" alt="网站推广"></span>  咨询热线</h4>
+        <p>17771822077</p>
+      </div>
+      <div class="bottomz_mid">
+        <h4>联系我们</h4>
+        <p><span>北京市朝阳区崔各庄乡南春路92号</span><br>
+                           电话：17771822077<br>
+              
+                          网址：www.kuaipai.me</p>
+      </div>
+      <div class="bottomz_right">
+        
+      </div>
+    </div>
+
+    <div class="banquanz">
+    <p></p>
+    </div>
+  </div>
+</body>
+</html>

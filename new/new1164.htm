@@ -1,0 +1,548 @@
+<!--//Built by Softscape HTML Builder 3.0 http://www.ruanjing.com-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>H5响应式网站在SEO优化中的优势</title>
+<style>
+
+.title_index{ /*大标题样式*/
+	font-size: 26pt;
+	font-family: "微软雅黑";
+	color: #999966;
+	font-weight: bold;
+}
+.title_page{ /*题目样式*/
+	font-size: 14pt;
+	font-family: "微软雅黑";
+	color: #999966;
+	font-weight: bold;
+}
+.content{/*内容样式*/
+
+	font-size: 16px;
+	font-family: "微软雅黑";
+	line-height: 28px;	/*行距*/	
+}
+.content img {
+	margin: 7px;
+}
+.9{ font-size: 9pt }
+.TitleLinks{ /*索引列表的停靠方位*/
+	text-align: center;
+}
+.TitleLinks .content { /*索引页使用文字列表符时，修改行距*/
+	line-height: 20pt;
+}
+.TitleLinks .content img { /*索引页使用图形列表符时，修改行距*/
+	margin-top: 7px;
+	margin-bottom: 7px;	
+}
+A:link	{text-decoration: none; color:#0033CC}
+A:visited  {text-decoration: none; color: #0033CC}
+A:active {text-decoration: none; color: #0000ff }
+A:hover {text-decoration: underline; color: #FF0000 }
+.b1 {
+	background-image: url(images/BD00085_.GIF);
+	background-repeat: no-repeat;
+}
+.b2 {
+	background-image: url(images/BD00085_2.GIF);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+.dacont{margin-top: 20px;}
+.header, .nav{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+#nav-header a,
+#nav-header a:link,
+#nav-header a:visited {
+	color: #555555;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+#nav-header a:hover,
+#nav-header nav li:hover {
+	color: #ff8d00;
+}
+
+#nav-header {
+	background: #fff;
+	height:120px;
+	line-height: 120px;
+	border-bottom: 1px solid #e4e4e4;
+}
+#nav-header.fixed{
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;	
+}
+#nav-header h1 {
+	display: inline;
+}
+
+#nav-header .header {
+	width: 1200px;
+	margin: 0 auto;
+	background: #ccc;
+}
+
+#nav-header .logo {
+	width: 220px;
+	height: 110px;
+	margin-top: 10px;
+	float: left;
+	margin-right: 40px;
+}
+
+#nav-header .logo img {
+	display: block;
+	position: relative;
+	top: 14px;
+}
+
+#nav-header nav {
+	width:590px;
+	display: inline-block;
+	float: left;
+	margin-left: 10px;
+
+}
+
+#nav-header nav li {
+	color: #555;
+	list-style: none;
+	line-height: 80px;
+	padding-right: 46px;
+	text-decoration: none;
+	font-size: 18px;
+	float: left;
+	cursor: pointer;
+	position: relative;
+}
+
+#nav-header nav li:hover .slide-submeu {
+	display: block;
+}
+
+#nav-header nav li i.slide-icon {
+	transition: All 0.4s ease-in-out;
+	-webkit-transition: All 0.4s ease-in-out;
+	-moz-transition: All 0.4s ease-in-out;
+	-o-transition: All 0.4s ease-in-out;
+}
+
+#nav-header nav li:hover i.slide-icon {
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+}
+
+#nav-header nav li i.slide-icon {
+	background: url(./images/icon.png);
+	background-position: 0px -47px;
+	display: inline-block;
+	width: 11px;
+	margin-left: 5px;
+	height: 7px;
+}
+
+/*子菜单*/
+
+#nav-header .submenu {
+	position: absolute;
+	width: 210px;
+	font-size: 15px;
+	color: #333;
+	background: #fff;
+	z-index: 800;
+	padding: 14px 0;
+	right: 0;
+	top: 52px;
+	border-top: 1px solid #e0e0e0;
+	display: none;
+}
+
+#nav-header .submenu a {
+	line-height: 35px;
+	padding: 0 14px;
+	display: block;
+	font-size: 12px;
+}
+
+#nav-header .submenu a:hover {
+	background: #fafafa;
+}
+#nav-header .submenu a {
+	color: #333333;
+}
+
+/*user-slide*/
+
+#nav-header .slide-submeu {
+	position: absolute;
+	left: 3px;
+	top: 85px;
+	z-index: 1000;
+	width: 200px;
+	padding: 10px 0;
+	background: #fff;
+	border-top: 1px solid #E4E4E4;
+	box-shadow: -1px 3px 5px rgba(000, 000, 000, 0.3);
+	display: none;
+}
+
+#nav-header .careerpath .slide-submeu a {
+	line-height: 35px;
+}
+
+#nav-header .careerpath .slide-submeu a:nth-child(2n) {
+	background: #fff;
+}
+
+#nav-header .slide-submeu a {
+	display: block;
+	font-size: 14px;
+	line-height: 35px;
+	padding: 0px 15px;
+}
+
+#nav-header .zhiye-submenu a i {
+	display: inline-block;
+	float: left;
+	width: 28px;
+	height: 20px;
+	margin-top: 8px;
+	margin-right: 10px;
+}
+
+#nav-header .ymzixun{
+	width: 100px;
+}
+#nav-header .ymguojia{
+	width: 150px;
+}
+#nav-header .zhiye-submenu a i.sjc-icon {
+background: url(./images/ggq1.png);
+}
+
+#nav-header .zhiye-submenu a i.dmnk-icon {
+	background: url(./images/ggq3.png);
+
+}
+
+#nav-header .zhiye-submenu a i.glna-icon {
+	background: url(./images/ggq4.png);
+	margin-top: 7px;
+}
+
+#nav-header .zhiye-submenu a i.slxy-icon {
+	background: url(./images/ggq5.png);
+	margin-top: 8px;
+}
+
+#nav-header .zhiye-submenu a i.atg-icon {
+	background: url(./images/ggq2.png);
+	margin-top: 7px;
+}
+#nav-header .zhiye-submenu a i.heishan-icon {
+	background: url(./images/ggqhs.jpg);
+	margin-top: 7px;
+}
+#nav-header .zhiye-submenu a i.tuerqi-icon {
+	background: url(./images/ggq80.jpg);
+	margin-top: 7px;
+}
+
+#nav-header .zhiye-submenu a i.spls-icon {
+background: url(./images/ggq6.png);
+}
+
+#nav-header .zhiye-submenu a i.met-icon {
+background: url(./images/ggq7.png);
+margin-top: 7px;
+}
+
+
+#nav-header .zhiye-submenu a i.greece-icon {
+background: url(./images/gqs13.jpg);
+margin-top: 7px;
+}
+
+#nav-header .zhiye-submenu a i.teq-icon {
+background: url(./images/ggq8.png);
+margin-top: 7px;
+}
+
+#nav-header .zhiye-submenu i.wnat-icon {
+	background: url(./images/ggq9.png);
+	margin-top: 7px;
+}
+#nav-header .zhiye-submenu i.xby-icon {
+	background: url(./images/ggq15.png);
+	margin-top: 7px;
+}
+#nav-header .zhiye-submenu i.pty-icon {
+	background: url(./images/ggq16.png);
+	margin-top: 7px;
+}
+#nav-header .zhiye-submenu i.ael-icon {
+	background: url(./images/ggq17.png);
+	margin-top: 7px;
+}
+#nav-header .zhiye-submenu i.yingg-icon {
+	background: url(./images/ggq18.png);
+	margin-top: 7px;
+}
+
+#nav-header .zhiye-submenu i.canada-icon {
+	background: url(./images/ggq19.png);
+	margin-top: 7px;
+}
+
+#nav-header .qy-box i {
+	display: inline-block;
+	float: left;
+	width: 28px;
+	height: 20px;
+	margin-top: 8px;
+	margin-right: 10px;
+}
+
+
+
+#nav-header .qy-box i.jnybs-icon {
+	background: url(./images/ggq10.png);
+	margin-top: 7px;
+}
+
+.header-right{
+	width: 210px;
+	height: 120px;
+	float: left;
+	margin-left: 70px;
+	
+}
+.header-right p{
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.header-right .header-rexian{
+	width: 210px;
+	height: 35px;
+	padding-top: 15px;
+
+}
+/*.header-right .header-rexian img{
+	position: relative;
+	top:-5px;
+}*/
+.header-right .header-rexian p{
+	font-size: 24px;
+	color: #ff8d00;
+}
+.header-right .header-weixin{
+	width: 210px;
+	height: 30px;
+	font-size: 15px;
+	color: #868686;
+}
+.header-right .header-weixin p{
+	padding-left: 18px;
+	line-height: 24px;
+	padding-top: 5px;
+}
+#nav-header .header-erwm{
+	width: 80px;
+	height: 120px;
+	float: left;
+}
+#nav-header .header-erwm img{
+	width: 80px;
+	height:100px;
+	padding-top: 10px;
+}
+
+
+
+.bottomz{width:100%;height:370px;background:#2a2d31;color:#a8a7a7;margin-top: 50px;padding-top: 10px;}
+.bottomz_xm{width:1180px;height:110px;margin:0 auto;font-size:15px;line-height:25px;}
+.bottomz_xm h5{font-size:18px;color:#fff;margin-bottom:7px;}
+.bottomz_xm>p>a{color:#a8a7a7;margin:0px 30px 0px 0px;font-size:15px;}
+.bottomz_xm>p>a:hover{color:#fff;}
+.bottomz .bottomz_content{width:1180px;margin:0 auto;height:185px;}
+.bottomz .bottomz_left{float:left;width:280px;height:185px;border-right:1px solid #7a7a7d;}
+
+.bottomz .bottomz_left h4{line-height:30px;font-size:18px;color:#fff;margin-top:20px;font-weight: normal;}
+.bottomz .bottomz_left p{line-height:20px;font-size:26px;color:#fff;font-weight: normal;}
+.bottomz .bottomz_mid{float:left;width:460px;height:185px;border-right:1px solid #7a7a7d;margin-left:60px;}
+.bottomz .bottomz_mid h4{font-size:20px;color:#fff;margin-bottom:20px;}
+.bottomz .bottomz_mid p{font-size:15px;line-height:26px;}
+.bottomz .bottomz_mid p span{color:#fff;}
+
+.bottomz .bottomz_right{float:left;width:330px;height:150px;margin-left:40px;padding-top:10px;}
+.bottomz .bottomz_right div{width:165px;float: left;}
+.bottomz .bottomz_right div img{padding-left: 20px;}
+.bottomz .bottomz_right p{margin-top:12px;text-align: center;}
+
+.bottomz .bottomz_content>h2{text-align: center;}
+.bottomz_youqing{width:1180px;height:90px;margin:0 auto;margin-top:40px;}
+.bottomz_youqing span{color:#dad9d9;font-size:16px;}
+.bottomz_youqing a{color:#a8a7a7;margin-right:10px;font-size:15px;}
+.bottomz_youqing a:hover{color:#fff;}
+
+.banquanz{width:100%;height:60px;background:#1c1f22;margin-top: 20px;}
+.banquanz p{font-size:14px;text-align:center;line-height:60px;color:#8c8c8c;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+
+
+	<div id="nav-header">
+        <div class="header">
+          <h1>
+            <a href="https://www.kuaipai.me/" class="logo">
+              <img src="./images/logo.png" width="220" alt="网站优化,网络推广,新站优化,整站优化,快速排名">
+            </a>
+          </h1>
+          <nav style="width:550px;">
+            <ul>
+              <li>
+                <a href="https://www.kuaipai.me/" class="home">首页</a>
+              </li>
+              <li class="careerpath">
+                <a href="https://www.kuaipai.me/faq.html" target="_blank">常见问题</a></i>
+                
+              </li>
+              <li>
+                <a href="tencent://message/?uin=9112761&Menu=yes" target="_blank">在线客服</a>
+                
+           
+              </li>
+
+              </li>
+              </li>
+
+            </ul>
+          </nav>
+
+
+            <div class="header-erwm">
+              <img src="./images/kefu123.jpg">
+            </div>
+          </div>
+
+        </div>
+
+
+
+<div align="center" class="dacont">
+<center>
+<table border="0" cellpadding="0" cellspacing="0" width="1200px">
+	<tr> 
+	<td width="90%" bgcolor="#000000"><table border="0" cellspacing="0" width="100%"
+	    cellpadding="0" height="293">
+	<tr bgcolor="#f5f5f5"> 
+	<td width="100%" class="b1"><DIV class="content"> 
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr> 
+	<td height="246" valign="top" class="b2"><table width="100%" height="361" border="0" cellpadding="0" cellspacing="0">
+	<tr> 
+	<td width="9%" height="31">&nbsp;</td>
+	<td width="82%" valign="bottom"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="9">
+	<tr> 
+	<td width="65%" height="12" align="right">&nbsp;</td>
+	</tr>
+	</table></td>
+	<td width="9%">&nbsp;</td>
+	</tr>
+	<tr> 
+	<td height="283">&nbsp;</td>
+	<td valign="top" class="content"><div align="center" class="title_page"><br>
+	H5响应式网站在SEO优化中的优势</div>
+	<p><!--HTMLBUILERPART0-->　　现在越来越多的企业选择网络推广,在这个时候我们首先是要有一个属于自己的网站,那么就会去找建站公司，但是随着互联网的发展,H5响应式网站成为了新宠，那么它有哪些好处呢?<BR><BR> 
+　　什么是H5响应式网站?<BR><BR> 
+　　从名称上也可以看出，H5响应网站必须响应多个终端，如PC、手机和其他端口。这类网站将自动调整显示在不同终端上的分辨率和效果，并大大改善用户的体验。与以前的网站类型一样，在适应PC后，如果没有单独的移动电话站，在与移动电话一起打开后，它仍然是PC端的风格，但分辨率变低，布局和字体减少，这给用户的正常浏览带来障碍。<BR><BR> 
+　　随着移动互联网的发展，每个人的智能手机都不再想获得一定的信息，打开电脑进行搜索，而是直接在手机上搜索，得到他们想要的信息。H5响应网站的出现只是解决了移动浏览的效果，大大改善了用户体验。<BR><BR> 
+　　与传统的企业站点相比，H5响应网站在seo优化方面有哪些优势?<BR><BR> 
+　　1.降低跳槽率，改善用户体验。<BR><BR> 
+　　如果现在我们用手机搜索某个信息或产品，只显示网站进入，字体很少，根本看不清楚，那么你还会呆在这个网站上吗?我肯定大多数人都会关掉它，去看下一个网站。这提高了网站的跳跃率。用户如何关掉它并关闭它?H5响应网站是不同的，在打开后，根据用户终端的大小和分辨率，网站的内容得到了很好的调整。<BR><BR> 
+　　2.更符合搜索引擎算法<BR><BR> 
+　　搜索引擎的目的是在用户面前快速显示用户需求信息，搜索引擎本身也有一定的算法来改善或减少网站的曝光率。对于结构良好、用户体验良好的网站，搜索引擎必须增加曝光量，即我们所知道的关键词排名。H5响应型网站是从页面设计到内部框架结构的发展，能够适应不同大小、分辨率和系统平台打开网页时的设备环境。<BR><BR> 
+　　3.节省时间和人力，同时推广多端口。<BR><BR> 
+　　H5响应站点是同一个站点，使用不同的端口，因此无论是内容更新还是产品发布，都会同时显示在不同的浏览页面端口上。传统的企业站、PC机和移动电话被分为两个站点，如果两个端口数据不同步，那么在SEO优化操作中，可以节省大量的人力和财力投资。<BR><BR> 
+　　从上述文章您已经知道了,它的优势是比较的明显，但是相对于价格来讲,肯定会比较传统的贵一点!但是相对于其它网站或是您的对手，网站优化的效果就比较明显了!内容仅供参考。<!--/HTMLBUILERPART0--> <br>
+	<br>
+	</p></td>
+	<td>&nbsp;</td>
+	</tr>
+	<tr> 
+	<td height="47">&nbsp;</td>
+	<td><table width="100%" border="0" cellpadding="0" cellspacing="0" class="9">
+	<tr> 
+	<td align="right"><a href="new1163.htm">上一页</a> <a href="index.html">目录页</a> <a href="new1165.htm">下一页</a></td>
+	<td width="150">&nbsp;</td>
+	</tr>
+	</table> 
+	<span class="9"><font color="#CCCCCC">创建时间：2020/9/23 </font></span></td>
+	<td>&nbsp;</td>
+	</tr>
+	</table></td>
+	</tr>
+	</table>
+	</div></td>
+	</tr>
+	</table></td>
+	</tr>
+</table>
+</center>
+</div>
+
+<!-- 底部开始 -->
+<div class="bottomz">
+  <div class="bottomz_xm">
+   <h5>热门城市:</h5>
+   <p>
+  <a href="https://www.kuaipai.me/seo_beijing/" title="北京网站推广" target="_blank">北京网站推广</a>
+  <a href="https://www.kuaipai.me/seo_shanghai/" title="上海网站推广" target="_blank">上海网站推广</a>
+  <a href="https://www.kuaipai.me/seo_guangzhou/" title="广州网站推广" target="_blank">广州网站推广</a>
+  <a href="https://www.kuaipai.me/seo_wuhan/" title="武汉网站推广" target="_blank">武汉网站推广</a>
+  <a href="https://www.kuaipai.me/seo_changsha/" title="长沙网站推广" target="_blank">长沙网站推广</a>
+  <a href="https://www.kuaipai.me/seo_xian/" title="西安网站推广" target="_blank">西安网站推广</a>
+
+  
+
+</p>
+  </div>
+    <div class="bottomz_content">
+      <div class="bottomz_left">
+        <img src="./images/logoxxx.png" title="网站推广" alt="网站推广">
+        <h4><span> <img src="./images/iph_03.png" title="网站推广" alt="网站推广"></span>  咨询热线</h4>
+        <p>17771822077</p>
+      </div>
+      <div class="bottomz_mid">
+        <h4>联系我们</h4>
+        <p><span>北京市朝阳区崔各庄乡南春路92号</span><br>
+                           电话：17771822077<br>
+              
+                          网址：www.kuaipai.me</p>
+      </div>
+      <div class="bottomz_right">
+        
+      </div>
+    </div>
+
+    <div class="banquanz">
+    <p></p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,555 @@
+<!--//Built by Softscape HTML Builder 3.0 http://www.ruanjing.com-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>H标签的重要性与使用方法</title>
+<style>
+
+.title_index{ /*大标题样式*/
+	font-size: 26pt;
+	font-family: "微软雅黑";
+	color: #999966;
+	font-weight: bold;
+}
+.title_page{ /*题目样式*/
+	font-size: 14pt;
+	font-family: "微软雅黑";
+	color: #999966;
+	font-weight: bold;
+}
+.content{/*内容样式*/
+
+	font-size: 16px;
+	font-family: "微软雅黑";
+	line-height: 28px;	/*行距*/	
+}
+.content img {
+	margin: 7px;
+}
+.9{ font-size: 9pt }
+.TitleLinks{ /*索引列表的停靠方位*/
+	text-align: center;
+}
+.TitleLinks .content { /*索引页使用文字列表符时，修改行距*/
+	line-height: 20pt;
+}
+.TitleLinks .content img { /*索引页使用图形列表符时，修改行距*/
+	margin-top: 7px;
+	margin-bottom: 7px;	
+}
+A:link	{text-decoration: none; color:#0033CC}
+A:visited  {text-decoration: none; color: #0033CC}
+A:active {text-decoration: none; color: #0000ff }
+A:hover {text-decoration: underline; color: #FF0000 }
+.b1 {
+	background-image: url(images/BD00085_.GIF);
+	background-repeat: no-repeat;
+}
+.b2 {
+	background-image: url(images/BD00085_2.GIF);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+.dacont{margin-top: 20px;}
+.header, .nav{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+#nav-header a,
+#nav-header a:link,
+#nav-header a:visited {
+	color: #555555;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+#nav-header a:hover,
+#nav-header nav li:hover {
+	color: #ff8d00;
+}
+
+#nav-header {
+	background: #fff;
+	height:120px;
+	line-height: 120px;
+	border-bottom: 1px solid #e4e4e4;
+}
+#nav-header.fixed{
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;	
+}
+#nav-header h1 {
+	display: inline;
+}
+
+#nav-header .header {
+	width: 1200px;
+	margin: 0 auto;
+	background: #ccc;
+}
+
+#nav-header .logo {
+	width: 220px;
+	height: 110px;
+	margin-top: 10px;
+	float: left;
+	margin-right: 40px;
+}
+
+#nav-header .logo img {
+	display: block;
+	position: relative;
+	top: 14px;
+}
+
+#nav-header nav {
+	width:590px;
+	display: inline-block;
+	float: left;
+	margin-left: 10px;
+
+}
+
+#nav-header nav li {
+	color: #555;
+	list-style: none;
+	line-height: 80px;
+	padding-right: 46px;
+	text-decoration: none;
+	font-size: 18px;
+	float: left;
+	cursor: pointer;
+	position: relative;
+}
+
+#nav-header nav li:hover .slide-submeu {
+	display: block;
+}
+
+#nav-header nav li i.slide-icon {
+	transition: All 0.4s ease-in-out;
+	-webkit-transition: All 0.4s ease-in-out;
+	-moz-transition: All 0.4s ease-in-out;
+	-o-transition: All 0.4s ease-in-out;
+}
+
+#nav-header nav li:hover i.slide-icon {
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+}
+
+#nav-header nav li i.slide-icon {
+	background: url(./images/icon.png);
+	background-position: 0px -47px;
+	display: inline-block;
+	width: 11px;
+	margin-left: 5px;
+	height: 7px;
+}
+
+/*子菜单*/
+
+#nav-header .submenu {
+	position: absolute;
+	width: 210px;
+	font-size: 15px;
+	color: #333;
+	background: #fff;
+	z-index: 800;
+	padding: 14px 0;
+	right: 0;
+	top: 52px;
+	border-top: 1px solid #e0e0e0;
+	display: none;
+}
+
+#nav-header .submenu a {
+	line-height: 35px;
+	padding: 0 14px;
+	display: block;
+	font-size: 12px;
+}
+
+#nav-header .submenu a:hover {
+	background: #fafafa;
+}
+#nav-header .submenu a {
+	color: #333333;
+}
+
+/*user-slide*/
+
+#nav-header .slide-submeu {
+	position: absolute;
+	left: 3px;
+	top: 85px;
+	z-index: 1000;
+	width: 200px;
+	padding: 10px 0;
+	background: #fff;
+	border-top: 1px solid #E4E4E4;
+	box-shadow: -1px 3px 5px rgba(000, 000, 000, 0.3);
+	display: none;
+}
+
+#nav-header .careerpath .slide-submeu a {
+	line-height: 35px;
+}
+
+#nav-header .careerpath .slide-submeu a:nth-child(2n) {
+	background: #fff;
+}
+
+#nav-header .slide-submeu a {
+	display: block;
+	font-size: 14px;
+	line-height: 35px;
+	padding: 0px 15px;
+}
+
+#nav-header .zhiye-submenu a i {
+	display: inline-block;
+	float: left;
+	width: 28px;
+	height: 20px;
+	margin-top: 8px;
+	margin-right: 10px;
+}
+
+#nav-header .ymzixun{
+	width: 100px;
+}
+#nav-header .ymguojia{
+	width: 150px;
+}
+#nav-header .zhiye-submenu a i.sjc-icon {
+background: url(./images/ggq1.png);
+}
+
+#nav-header .zhiye-submenu a i.dmnk-icon {
+	background: url(./images/ggq3.png);
+
+}
+
+#nav-header .zhiye-submenu a i.glna-icon {
+	background: url(./images/ggq4.png);
+	margin-top: 7px;
+}
+
+#nav-header .zhiye-submenu a i.slxy-icon {
+	background: url(./images/ggq5.png);
+	margin-top: 8px;
+}
+
+#nav-header .zhiye-submenu a i.atg-icon {
+	background: url(./images/ggq2.png);
+	margin-top: 7px;
+}
+#nav-header .zhiye-submenu a i.heishan-icon {
+	background: url(./images/ggqhs.jpg);
+	margin-top: 7px;
+}
+#nav-header .zhiye-submenu a i.tuerqi-icon {
+	background: url(./images/ggq80.jpg);
+	margin-top: 7px;
+}
+
+#nav-header .zhiye-submenu a i.spls-icon {
+background: url(./images/ggq6.png);
+}
+
+#nav-header .zhiye-submenu a i.met-icon {
+background: url(./images/ggq7.png);
+margin-top: 7px;
+}
+
+
+#nav-header .zhiye-submenu a i.greece-icon {
+background: url(./images/gqs13.jpg);
+margin-top: 7px;
+}
+
+#nav-header .zhiye-submenu a i.teq-icon {
+background: url(./images/ggq8.png);
+margin-top: 7px;
+}
+
+#nav-header .zhiye-submenu i.wnat-icon {
+	background: url(./images/ggq9.png);
+	margin-top: 7px;
+}
+#nav-header .zhiye-submenu i.xby-icon {
+	background: url(./images/ggq15.png);
+	margin-top: 7px;
+}
+#nav-header .zhiye-submenu i.pty-icon {
+	background: url(./images/ggq16.png);
+	margin-top: 7px;
+}
+#nav-header .zhiye-submenu i.ael-icon {
+	background: url(./images/ggq17.png);
+	margin-top: 7px;
+}
+#nav-header .zhiye-submenu i.yingg-icon {
+	background: url(./images/ggq18.png);
+	margin-top: 7px;
+}
+
+#nav-header .zhiye-submenu i.canada-icon {
+	background: url(./images/ggq19.png);
+	margin-top: 7px;
+}
+
+#nav-header .qy-box i {
+	display: inline-block;
+	float: left;
+	width: 28px;
+	height: 20px;
+	margin-top: 8px;
+	margin-right: 10px;
+}
+
+
+
+#nav-header .qy-box i.jnybs-icon {
+	background: url(./images/ggq10.png);
+	margin-top: 7px;
+}
+
+.header-right{
+	width: 210px;
+	height: 120px;
+	float: left;
+	margin-left: 70px;
+	
+}
+.header-right p{
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.header-right .header-rexian{
+	width: 210px;
+	height: 35px;
+	padding-top: 15px;
+
+}
+/*.header-right .header-rexian img{
+	position: relative;
+	top:-5px;
+}*/
+.header-right .header-rexian p{
+	font-size: 24px;
+	color: #ff8d00;
+}
+.header-right .header-weixin{
+	width: 210px;
+	height: 30px;
+	font-size: 15px;
+	color: #868686;
+}
+.header-right .header-weixin p{
+	padding-left: 18px;
+	line-height: 24px;
+	padding-top: 5px;
+}
+#nav-header .header-erwm{
+	width: 80px;
+	height: 120px;
+	float: left;
+}
+#nav-header .header-erwm img{
+	width: 80px;
+	height:100px;
+	padding-top: 10px;
+}
+
+
+
+.bottomz{width:100%;height:370px;background:#2a2d31;color:#a8a7a7;margin-top: 50px;padding-top: 10px;}
+.bottomz_xm{width:1180px;height:110px;margin:0 auto;font-size:15px;line-height:25px;}
+.bottomz_xm h5{font-size:18px;color:#fff;margin-bottom:7px;}
+.bottomz_xm>p>a{color:#a8a7a7;margin:0px 30px 0px 0px;font-size:15px;}
+.bottomz_xm>p>a:hover{color:#fff;}
+.bottomz .bottomz_content{width:1180px;margin:0 auto;height:185px;}
+.bottomz .bottomz_left{float:left;width:280px;height:185px;border-right:1px solid #7a7a7d;}
+
+.bottomz .bottomz_left h4{line-height:30px;font-size:18px;color:#fff;margin-top:20px;font-weight: normal;}
+.bottomz .bottomz_left p{line-height:20px;font-size:26px;color:#fff;font-weight: normal;}
+.bottomz .bottomz_mid{float:left;width:460px;height:185px;border-right:1px solid #7a7a7d;margin-left:60px;}
+.bottomz .bottomz_mid h4{font-size:20px;color:#fff;margin-bottom:20px;}
+.bottomz .bottomz_mid p{font-size:15px;line-height:26px;}
+.bottomz .bottomz_mid p span{color:#fff;}
+
+.bottomz .bottomz_right{float:left;width:330px;height:150px;margin-left:40px;padding-top:10px;}
+.bottomz .bottomz_right div{width:165px;float: left;}
+.bottomz .bottomz_right div img{padding-left: 20px;}
+.bottomz .bottomz_right p{margin-top:12px;text-align: center;}
+
+.bottomz .bottomz_content>h2{text-align: center;}
+.bottomz_youqing{width:1180px;height:90px;margin:0 auto;margin-top:40px;}
+.bottomz_youqing span{color:#dad9d9;font-size:16px;}
+.bottomz_youqing a{color:#a8a7a7;margin-right:10px;font-size:15px;}
+.bottomz_youqing a:hover{color:#fff;}
+
+.banquanz{width:100%;height:60px;background:#1c1f22;margin-top: 20px;}
+.banquanz p{font-size:14px;text-align:center;line-height:60px;color:#8c8c8c;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+
+
+	<div id="nav-header">
+        <div class="header">
+          <h1>
+            <a href="https://www.kuaipai.me/" class="logo">
+              <img src="./images/logo.png" width="220" alt="网站优化,网络推广,新站优化,整站优化,快速排名">
+            </a>
+          </h1>
+          <nav style="width:550px;">
+            <ul>
+              <li>
+                <a href="https://www.kuaipai.me/" class="home">首页</a>
+              </li>
+              <li class="careerpath">
+                <a href="https://www.kuaipai.me/faq.html" target="_blank">常见问题</a></i>
+                
+              </li>
+              <li>
+                <a href="tencent://message/?uin=9112761&Menu=yes" target="_blank">在线客服</a>
+                
+           
+              </li>
+
+              </li>
+              </li>
+
+            </ul>
+          </nav>
+
+
+            <div class="header-erwm">
+              <img src="./images/kefu123.jpg">
+            </div>
+          </div>
+
+        </div>
+
+
+
+<div align="center" class="dacont">
+<center>
+<table border="0" cellpadding="0" cellspacing="0" width="1200px">
+	<tr> 
+	<td width="90%" bgcolor="#000000"><table border="0" cellspacing="0" width="100%"
+	    cellpadding="0" height="293">
+	<tr bgcolor="#f5f5f5"> 
+	<td width="100%" class="b1"><DIV class="content"> 
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr> 
+	<td height="246" valign="top" class="b2"><table width="100%" height="361" border="0" cellpadding="0" cellspacing="0">
+	<tr> 
+	<td width="9%" height="31">&nbsp;</td>
+	<td width="82%" valign="bottom"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="9">
+	<tr> 
+	<td width="65%" height="12" align="right">&nbsp;</td>
+	</tr>
+	</table></td>
+	<td width="9%">&nbsp;</td>
+	</tr>
+	<tr> 
+	<td height="283">&nbsp;</td>
+	<td valign="top" class="content"><div align="center" class="title_page"><br>
+	H标签的重要性与使用方法</div>
+	<p><!--HTMLBUILERPART0-->　　H标签的重要性与使用方法都有哪些呢?H标签的作用是帮助搜索引擎蜘蛛快速辨识网站网题，告诉搜索引擎哪些关键词是网站的核心，比较重要。正因为如此，很多人就在页面中加入很多H标签，滥用H标签对蜘蛛是极其不友好的，那么H标签的重要性与使用方法都有哪些呢?接下来就有小编来为大家做简单的信息介绍。<BR><BR> 
+　　一、seo优化中不同H标签的重要性<BR><BR> 
+　　heading标签共6个，从h1到h6，heading是什么意思?heading即为title的意思，从主标题到副标题，再分层分级。看看传统纸质册本的目录就知道如何了，尤其技能类册本，文史类分的更为细心。网页便是电子版的书本，h标签的功用便是在网页中用以标定大标题小标题章节标题的，现在明白把。它们在任何阅读器中都被给定了内置的默认属性，比如h1的字号为48，加粗700，这契合英文网页的结构，但在中文网页中就显得过大。<BR><BR> 
+　　网页中的条理结构不如册本那么好界定，是因为一个网页中标题副标题小标题跟相关性极强的内容构成的共同体。譬如尾部版权声明，头部及顶部的附加信息等，尤其是综合性强的页面比如首页，假如再加上本身站点所涵盖的信息范畴很广的话，h标签就很好的运用。<BR><BR> 
+　　作用及相关性无论关于阅读信息的用户还是搜索蜘蛛。明确的条理结构性对网站优化有很好表现。信息获取的需求是快速，heading正是基于此目的而生。通俗叫就是页面越不太容易被找到搜索和用户找到，heading的显示的作用更明显。有的内容要求跳过，有的要求精读，heading让目的性变得容易。<BR><BR> 
+　　h标签的实际运用分两种，一是h系列的差别运用。二是差别种别网页的h排布。　 一个网页中，h1代表主标题。也便是这个文档的中心关键词组合并的词或句子。通俗它跟文档head部分的title一致，前者用于页面展现，后者用于标示阅读器头，发送效劳器的头部标示的一部分，以及搜索引擎结果展现的标题。由于有这个属性，通俗这个标题带有广告，主题特出或许吸引点击等的功用。并且字数30字以内。然后者则只需特出文档主题即可，并且太长也不好看。由于h1的特性，一个页面只容许一个。<BR><BR> 
+　　h2标签在模范的界说中是专为副标题预备的。但在实际的网页文档中，除了概况页面或专题页需求副标题，其他页面都不太需求。因此通俗将h2用作页面的二级类标题，比如首页可用来标记标题之下的大模块，数目不可以太多，拿企业站来说，假如主要害词为礼物杯，二级标题就能够有按功用分礼物杯，按送礼对象分礼物杯，按材质分礼物杯。<BR><BR> 
+　　h3到h6顺次类推。让整个页面构成逐层细化及深化的明晰结构。當然最佳的结构是每一块都被格式化进h标签中，但理想中还是比较难做到。统一个板块必然有轻有重，不太能统一板块的全部都运用同级标签，处置方法有多种，比如将其作为普通文档看待，但是展示上运用相同的款式。或许运用strong标签弱化它的地位。当h标签被准确运用的时候，整个文档无论是用户照旧蜘蛛看来都是结构明晰，重点特出的。<BR><BR> 
+　　在列表页面，起首要评判页面与搜查用户的需求符合度，基于SEO的h标签不运用都另说。而如果相似58同城那样同类信息的结果页倒是搜查用户十分需求的，因此也是十分具有排名潜力的页面，做好h标签排布十分重要。页面可作为专题页来做，交换掉logo部分红为专题logo，特出专题关键词。h2标签则可用于本页面信息的类目标再度细化，以方便用户更便捷的定位他想要的信息，如有须要可再运用h3及其他。當然在内容信息量大小上得做好平衡。过大搅扰选择，过小则会形成更屡次搜索及交互，都是不行取的。<BR><BR> 
+　　二、如何正确使用H标签<BR><BR> 
+　　1、H1标签最好用在H2-H6之前，并且一个页面只用一次，不要一直用。有些站点在一个页面大量的使用，甚至出现了几十次，看到关键词就用，觉得可以增强效果，其实不然。H1可以用但不要泛滥，我们是有效的堆砌而不是胡乱的强塞。合理的使用H1标签可以给网站带来好的效果，而使用的不恰当会给网站带来不利影响，严重的甚至会导致K站。<BR><BR> 
+　　2、H1标签中使用的关键词，应该是页面最主要的关键词或品牌词，并且应该是在网页标题中使用的关键词。H2-H6根据这个原理逐级递减，从一般关键词到长尾关键词，从长尾关键词到标题，不过一般H3以后就用得比较少了，因为H1代表最重要的，H6代表相对最不重要的，再者越到后面意义越来越小。<BR><BR> 
+　　3、H1标签之间肯定是需要包含关键词的，但是这个关键词也是需要具有可读性和合理性，不要为了强调而把这个关键词加进去，而是因为这个关键词需要被强调才来加H1标签，注意先后。是先有关键词，然后给关键词加H1标签。<BR><BR> 
+　　4.如果把H1标签加在LOGO图片，图片ALT信息上要加上网站名或品牌词，这样才能更加突出首页的关键词，不然给一个图片加H1，你觉得有什么效果?<BR><BR> 
+　　5.H1标签尽量靠近在html中的body标签，越近越好，以便让搜索引擎最快的找到主题。从上面的例子就可以发现H1标签都在body代码的最前面，为什么?因为搜索引擎的抓取就是从上而下来的，这样可以让H1标签强调的关键词最快被发现。<BR><BR> 
+　　6.内容页H1标签一般都是用在内容的大标题，最好也是只用一次，不过有很多内容页也用了2次，一次用在LOGO或出现在网页最前面的主关键词，一次用在内容的大标题上。如果最前面没有主要的关键词，建议最好还是只用在大标题上一次。<BR><BR> 
+　　7.当不想将H1标签用在LOGO上并且网页主要的关键词在后面的时候，如果还是想加H1标签并且想H1标签的关键词靠前，可以利用DIV+CSS布局来调整主关键词的位置，这样也不会影响页面效果。<BR><BR> 
+　　8.不要总想着加H1标签，很多大网站也是没有用H1标签，像百度、新浪、爱站网等压根就没用H1标签，所以只要真真切切的为用户提供信息就可以了，至于是不是一定要用H1标签就不一定了。<BR><BR> 
+　　以上信息就是小编根据H标签的重要性与使用方法为大家所做的简单的信息介绍，大家要是想要了解更多关于这方面的信息，大家可以关注我们的官方网址来进行详细的信息咨询。希望以上信息能够帮助到大家。<!--/HTMLBUILERPART0--> <br>
+	<br>
+	</p></td>
+	<td>&nbsp;</td>
+	</tr>
+	<tr> 
+	<td height="47">&nbsp;</td>
+	<td><table width="100%" border="0" cellpadding="0" cellspacing="0" class="9">
+	<tr> 
+	<td align="right"><a href="new1178.htm">上一页</a> <a href="index.html">目录页</a> <a href="new1180.htm">下一页</a></td>
+	<td width="150">&nbsp;</td>
+	</tr>
+	</table> 
+	<span class="9"><font color="#CCCCCC">创建时间：2020/9/23 </font></span></td>
+	<td>&nbsp;</td>
+	</tr>
+	</table></td>
+	</tr>
+	</table>
+	</div></td>
+	</tr>
+	</table></td>
+	</tr>
+</table>
+</center>
+</div>
+
+<!-- 底部开始 -->
+<div class="bottomz">
+  <div class="bottomz_xm">
+   <h5>热门城市:</h5>
+   <p>
+  <a href="https://www.kuaipai.me/seo_beijing/" title="北京网站推广" target="_blank">北京网站推广</a>
+  <a href="https://www.kuaipai.me/seo_shanghai/" title="上海网站推广" target="_blank">上海网站推广</a>
+  <a href="https://www.kuaipai.me/seo_guangzhou/" title="广州网站推广" target="_blank">广州网站推广</a>
+  <a href="https://www.kuaipai.me/seo_wuhan/" title="武汉网站推广" target="_blank">武汉网站推广</a>
+  <a href="https://www.kuaipai.me/seo_changsha/" title="长沙网站推广" target="_blank">长沙网站推广</a>
+  <a href="https://www.kuaipai.me/seo_xian/" title="西安网站推广" target="_blank">西安网站推广</a>
+
+  
+
+</p>
+  </div>
+    <div class="bottomz_content">
+      <div class="bottomz_left">
+        <img src="./images/logoxxx.png" title="网站推广" alt="网站推广">
+        <h4><span> <img src="./images/iph_03.png" title="网站推广" alt="网站推广"></span>  咨询热线</h4>
+        <p>17771822077</p>
+      </div>
+      <div class="bottomz_mid">
+        <h4>联系我们</h4>
+        <p><span>北京市朝阳区崔各庄乡南春路92号</span><br>
+                           电话：17771822077<br>
+              
+                          网址：www.kuaipai.me</p>
+      </div>
+      <div class="bottomz_right">
+        
+      </div>
+    </div>
+
+    <div class="banquanz">
+    <p></p>
+    </div>
+  </div>
+</body>
+</html>
