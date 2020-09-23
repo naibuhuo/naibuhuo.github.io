@@ -1,0 +1,597 @@
+<!--//Built by Softscape HTML Builder 3.0 http://www.ruanjing.com-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>2017全年百度、360搜索算法大回顾</title>
+<style>
+
+.title_index{ /*大标题样式*/
+	font-size: 26pt;
+	font-family: "微软雅黑";
+	color: #999966;
+	font-weight: bold;
+}
+.title_page{ /*题目样式*/
+	font-size: 14pt;
+	font-family: "微软雅黑";
+	color: #999966;
+	font-weight: bold;
+}
+.content{/*内容样式*/
+
+	font-size: 16px;
+	font-family: "微软雅黑";
+	line-height: 28px;	/*行距*/	
+}
+.content img {
+	margin: 7px;
+}
+.9{ font-size: 9pt }
+.TitleLinks{ /*索引列表的停靠方位*/
+	text-align: center;
+}
+.TitleLinks .content { /*索引页使用文字列表符时，修改行距*/
+	line-height: 20pt;
+}
+.TitleLinks .content img { /*索引页使用图形列表符时，修改行距*/
+	margin-top: 7px;
+	margin-bottom: 7px;	
+}
+A:link	{text-decoration: none; color:#0033CC}
+A:visited  {text-decoration: none; color: #0033CC}
+A:active {text-decoration: none; color: #0000ff }
+A:hover {text-decoration: underline; color: #FF0000 }
+.b1 {
+	background-image: url(images/BD00085_.GIF);
+	background-repeat: no-repeat;
+}
+.b2 {
+	background-image: url(images/BD00085_2.GIF);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+.dacont{margin-top: 20px;}
+.header, .nav{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+#nav-header a,
+#nav-header a:link,
+#nav-header a:visited {
+	color: #555555;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+#nav-header a:hover,
+#nav-header nav li:hover {
+	color: #ff8d00;
+}
+
+#nav-header {
+	background: #fff;
+	height:120px;
+	line-height: 120px;
+	border-bottom: 1px solid #e4e4e4;
+}
+#nav-header.fixed{
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;	
+}
+#nav-header h1 {
+	display: inline;
+}
+
+#nav-header .header {
+	width: 1200px;
+	margin: 0 auto;
+	background: #ccc;
+}
+
+#nav-header .logo {
+	width: 220px;
+	height: 110px;
+	margin-top: 10px;
+	float: left;
+	margin-right: 40px;
+}
+
+#nav-header .logo img {
+	display: block;
+	position: relative;
+	top: 14px;
+}
+
+#nav-header nav {
+	width:590px;
+	display: inline-block;
+	float: left;
+	margin-left: 10px;
+
+}
+
+#nav-header nav li {
+	color: #555;
+	list-style: none;
+	line-height: 80px;
+	padding-right: 46px;
+	text-decoration: none;
+	font-size: 18px;
+	float: left;
+	cursor: pointer;
+	position: relative;
+}
+
+#nav-header nav li:hover .slide-submeu {
+	display: block;
+}
+
+#nav-header nav li i.slide-icon {
+	transition: All 0.4s ease-in-out;
+	-webkit-transition: All 0.4s ease-in-out;
+	-moz-transition: All 0.4s ease-in-out;
+	-o-transition: All 0.4s ease-in-out;
+}
+
+#nav-header nav li:hover i.slide-icon {
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+}
+
+#nav-header nav li i.slide-icon {
+	background: url(./images/icon.png);
+	background-position: 0px -47px;
+	display: inline-block;
+	width: 11px;
+	margin-left: 5px;
+	height: 7px;
+}
+
+/*子菜单*/
+
+#nav-header .submenu {
+	position: absolute;
+	width: 210px;
+	font-size: 15px;
+	color: #333;
+	background: #fff;
+	z-index: 800;
+	padding: 14px 0;
+	right: 0;
+	top: 52px;
+	border-top: 1px solid #e0e0e0;
+	display: none;
+}
+
+#nav-header .submenu a {
+	line-height: 35px;
+	padding: 0 14px;
+	display: block;
+	font-size: 12px;
+}
+
+#nav-header .submenu a:hover {
+	background: #fafafa;
+}
+#nav-header .submenu a {
+	color: #333333;
+}
+
+/*user-slide*/
+
+#nav-header .slide-submeu {
+	position: absolute;
+	left: 3px;
+	top: 85px;
+	z-index: 1000;
+	width: 200px;
+	padding: 10px 0;
+	background: #fff;
+	border-top: 1px solid #E4E4E4;
+	box-shadow: -1px 3px 5px rgba(000, 000, 000, 0.3);
+	display: none;
+}
+
+#nav-header .careerpath .slide-submeu a {
+	line-height: 35px;
+}
+
+#nav-header .careerpath .slide-submeu a:nth-child(2n) {
+	background: #fff;
+}
+
+#nav-header .slide-submeu a {
+	display: block;
+	font-size: 14px;
+	line-height: 35px;
+	padding: 0px 15px;
+}
+
+#nav-header .zhiye-submenu a i {
+	display: inline-block;
+	float: left;
+	width: 28px;
+	height: 20px;
+	margin-top: 8px;
+	margin-right: 10px;
+}
+
+#nav-header .ymzixun{
+	width: 100px;
+}
+#nav-header .ymguojia{
+	width: 150px;
+}
+#nav-header .zhiye-submenu a i.sjc-icon {
+background: url(./images/ggq1.png);
+}
+
+#nav-header .zhiye-submenu a i.dmnk-icon {
+	background: url(./images/ggq3.png);
+
+}
+
+#nav-header .zhiye-submenu a i.glna-icon {
+	background: url(./images/ggq4.png);
+	margin-top: 7px;
+}
+
+#nav-header .zhiye-submenu a i.slxy-icon {
+	background: url(./images/ggq5.png);
+	margin-top: 8px;
+}
+
+#nav-header .zhiye-submenu a i.atg-icon {
+	background: url(./images/ggq2.png);
+	margin-top: 7px;
+}
+#nav-header .zhiye-submenu a i.heishan-icon {
+	background: url(./images/ggqhs.jpg);
+	margin-top: 7px;
+}
+#nav-header .zhiye-submenu a i.tuerqi-icon {
+	background: url(./images/ggq80.jpg);
+	margin-top: 7px;
+}
+
+#nav-header .zhiye-submenu a i.spls-icon {
+background: url(./images/ggq6.png);
+}
+
+#nav-header .zhiye-submenu a i.met-icon {
+background: url(./images/ggq7.png);
+margin-top: 7px;
+}
+
+
+#nav-header .zhiye-submenu a i.greece-icon {
+background: url(./images/gqs13.jpg);
+margin-top: 7px;
+}
+
+#nav-header .zhiye-submenu a i.teq-icon {
+background: url(./images/ggq8.png);
+margin-top: 7px;
+}
+
+#nav-header .zhiye-submenu i.wnat-icon {
+	background: url(./images/ggq9.png);
+	margin-top: 7px;
+}
+#nav-header .zhiye-submenu i.xby-icon {
+	background: url(./images/ggq15.png);
+	margin-top: 7px;
+}
+#nav-header .zhiye-submenu i.pty-icon {
+	background: url(./images/ggq16.png);
+	margin-top: 7px;
+}
+#nav-header .zhiye-submenu i.ael-icon {
+	background: url(./images/ggq17.png);
+	margin-top: 7px;
+}
+#nav-header .zhiye-submenu i.yingg-icon {
+	background: url(./images/ggq18.png);
+	margin-top: 7px;
+}
+
+#nav-header .zhiye-submenu i.canada-icon {
+	background: url(./images/ggq19.png);
+	margin-top: 7px;
+}
+
+#nav-header .qy-box i {
+	display: inline-block;
+	float: left;
+	width: 28px;
+	height: 20px;
+	margin-top: 8px;
+	margin-right: 10px;
+}
+
+
+
+#nav-header .qy-box i.jnybs-icon {
+	background: url(./images/ggq10.png);
+	margin-top: 7px;
+}
+
+.header-right{
+	width: 210px;
+	height: 120px;
+	float: left;
+	margin-left: 70px;
+	
+}
+.header-right p{
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.header-right .header-rexian{
+	width: 210px;
+	height: 35px;
+	padding-top: 15px;
+
+}
+/*.header-right .header-rexian img{
+	position: relative;
+	top:-5px;
+}*/
+.header-right .header-rexian p{
+	font-size: 24px;
+	color: #ff8d00;
+}
+.header-right .header-weixin{
+	width: 210px;
+	height: 30px;
+	font-size: 15px;
+	color: #868686;
+}
+.header-right .header-weixin p{
+	padding-left: 18px;
+	line-height: 24px;
+	padding-top: 5px;
+}
+#nav-header .header-erwm{
+	width: 80px;
+	height: 120px;
+	float: left;
+}
+#nav-header .header-erwm img{
+	width: 80px;
+	height:100px;
+	padding-top: 10px;
+}
+
+
+
+.bottomz{width:100%;height:370px;background:#2a2d31;color:#a8a7a7;margin-top: 50px;padding-top: 10px;}
+.bottomz_xm{width:1180px;height:110px;margin:0 auto;font-size:15px;line-height:25px;}
+.bottomz_xm h5{font-size:18px;color:#fff;margin-bottom:7px;}
+.bottomz_xm>p>a{color:#a8a7a7;margin:0px 30px 0px 0px;font-size:15px;}
+.bottomz_xm>p>a:hover{color:#fff;}
+.bottomz .bottomz_content{width:1180px;margin:0 auto;height:185px;}
+.bottomz .bottomz_left{float:left;width:280px;height:185px;border-right:1px solid #7a7a7d;}
+
+.bottomz .bottomz_left h4{line-height:30px;font-size:18px;color:#fff;margin-top:20px;font-weight: normal;}
+.bottomz .bottomz_left p{line-height:20px;font-size:26px;color:#fff;font-weight: normal;}
+.bottomz .bottomz_mid{float:left;width:460px;height:185px;border-right:1px solid #7a7a7d;margin-left:60px;}
+.bottomz .bottomz_mid h4{font-size:20px;color:#fff;margin-bottom:20px;}
+.bottomz .bottomz_mid p{font-size:15px;line-height:26px;}
+.bottomz .bottomz_mid p span{color:#fff;}
+
+.bottomz .bottomz_right{float:left;width:330px;height:150px;margin-left:40px;padding-top:10px;}
+.bottomz .bottomz_right div{width:165px;float: left;}
+.bottomz .bottomz_right div img{padding-left: 20px;}
+.bottomz .bottomz_right p{margin-top:12px;text-align: center;}
+
+.bottomz .bottomz_content>h2{text-align: center;}
+.bottomz_youqing{width:1180px;height:90px;margin:0 auto;margin-top:40px;}
+.bottomz_youqing span{color:#dad9d9;font-size:16px;}
+.bottomz_youqing a{color:#a8a7a7;margin-right:10px;font-size:15px;}
+.bottomz_youqing a:hover{color:#fff;}
+
+.banquanz{width:100%;height:60px;background:#1c1f22;margin-top: 20px;}
+.banquanz p{font-size:14px;text-align:center;line-height:60px;color:#8c8c8c;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+
+
+	<div id="nav-header">
+        <div class="header">
+          <h1>
+            <a href="https://www.kuaipai.me/" class="logo">
+              <img src="./images/logo.png" width="220" alt="网站优化,网络推广,新站优化,整站优化,快速排名">
+            </a>
+          </h1>
+          <nav style="width:550px;">
+            <ul>
+              <li>
+                <a href="https://www.kuaipai.me/" class="home">首页</a>
+              </li>
+              <li class="careerpath">
+                <a href="https://www.kuaipai.me/faq.html" target="_blank">常见问题</a></i>
+                
+              </li>
+              <li>
+                <a href="tencent://message/?uin=9112761&Menu=yes" target="_blank">在线客服</a>
+                
+           
+              </li>
+
+              </li>
+              </li>
+
+            </ul>
+          </nav>
+
+
+            <div class="header-erwm">
+              <img src="./images/kefu123.jpg">
+            </div>
+          </div>
+
+        </div>
+
+
+
+<div align="center" class="dacont">
+<center>
+<table border="0" cellpadding="0" cellspacing="0" width="1200px">
+	<tr> 
+	<td width="90%" bgcolor="#000000"><table border="0" cellspacing="0" width="100%"
+	    cellpadding="0" height="293">
+	<tr bgcolor="#f5f5f5"> 
+	<td width="100%" class="b1"><DIV class="content"> 
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr> 
+	<td height="246" valign="top" class="b2"><table width="100%" height="361" border="0" cellpadding="0" cellspacing="0">
+	<tr> 
+	<td width="9%" height="31">&nbsp;</td>
+	<td width="82%" valign="bottom"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="9">
+	<tr> 
+	<td width="65%" height="12" align="right">&nbsp;</td>
+	</tr>
+	</table></td>
+	<td width="9%">&nbsp;</td>
+	</tr>
+	<tr> 
+	<td height="283">&nbsp;</td>
+	<td valign="top" class="content"><div align="center" class="title_page"><br>
+	2017全年百度、360搜索算法大回顾</div>
+	<p><!--HTMLBUILERPART0-->　　2017年对于站长们来说，是不太好过的一年，搜索引擎的计划、算法格外的多！<BR><BR> 
+　　百度带着大自然系命名的算法来了5次；360那边也不甘示弱，组了个西游记班子，4度来袭。<BR><BR> 
+　　这样间隔一段时间就来一发算法调整的高频率，较往年实属不多见，这让不少站长都觉得自己网站的流量全年都在大幅异常……不过，这大概说明各大搜索引擎对于用户的体验也是越来越重视了吧。<BR><BR> 
+　　今天快排么就来给盘点一下，2017这一整年里百度 & 360搜索的所有算法！<BR><BR> 
+　　360搜索<BR><BR> 
+　　1、《360“悟空”算法2.0》<BR><BR> 
+　　公布时间：2017年4月12日<BR><BR> 
+　　目的：打击网站被黑作弊行为<BR><BR> 
+　　内容说明：不少网站出现被黑的情况，其主要表现形式为：站点通过代码劫持等形式跳转到第三方恶意站点，网站出现大面积被黑、博彩、色情、私服等不良信息。新发布“悟空算法2.0”，能更加准确快速地识别各种网站被黑客攻击的行为，降低恶意网站在搜索引擎中的不良展现和对用户的影响。<BR><BR> 
+　　▼<BR><BR> 
+　　2、《360“后羿”算法2.0》<BR><BR> 
+　　公布时间：2017年9月7日<BR><BR> 
+　　目的：对恶劣采集行为持续打击<BR><BR> 
+　　内容说明：去年的“后羿算法”对低劣的采集站点加以控制，对原创和稀缺性网页进行保护和提权，同时确保新闻网站之间正常的转载行为不受影响。2.0升级版将严厉打击以恶劣采集为内容主要来源的网站，情节严重站点将会剔除索引！并且，与此类作弊站点有关联的其他站点，也将会受到不同程度的影响。<BR><BR> 
+　　▼<BR><BR> 
+　　3、《360“哪咤”算法》<BR><BR> 
+　　公布时间：2017年9月20日<BR><BR> 
+　　目的：严厉打击恶劣seo骗取流量行为<BR><BR> 
+　　内容说明：利用“黑帽SEO”手法恶意骗取流量的行为，干扰正常用户体验的行为，如标题或者内容中存在关键词堆砌、恶劣转载、发布敏感内容等黑帽SEO行为；站点大部分内容与站点自身的主题及领域不相关；页面资源虚假或内容与页面主题不符；页面整洁度差。<BR><BR> 
+　　▼<BR><BR> 
+　　4、《360“八戒”算法》<BR><BR> 
+　　公布时间：2017年11月29日<BR><BR> 
+　　目的：维护站长及网站从搜索引擎获取流量的公平性<BR><BR> 
+　　内容说明：“八戒算法”旨在控制站群、克隆站、虚假信息站等一系列以伤害他人网站利益、骗取流量为目的，产生大量的低质、违禁、色情、虚假内容和信息重复冗余内容，严重影响正常用户访问浏览的网站。<BR><BR> 
+　　“八戒算法”将打击包括但不限于包含以下几类特征的站点：<BR><BR> 
+　　通过程序系统批量构建生成大量同质网站，质量低劣。<BR><BR> 
+　　恶意套用他人正常站点，批量生成大量虚假或具有诱导用户性质的网站。<BR><BR> 
+　　通过批量建站形成互链关系，并试图获取推广利益。<BR><BR> 
+　　注册大量域名构建同质化站点，造成信息重复冗余。<BR><BR> 
+　　百度搜索<BR><BR> 
+　　1、《百度移动烽火计划》<BR><BR> 
+　　公布时间：2017年2月23日<BR><BR> 
+　　目的：打击百度移动搜索页面劫持<BR><BR> 
+　　内容说明：用户在浏览完落地页返回搜索结果页时，进入到了虚假的百度移动搜索结果页。该页面模拟了百度搜索结果首页，但实际上是一个虚假的风险站点，有损用户搜索体验和安全。<BR><BR> 
+　　2、《百度飓风算法》<BR><BR> 
+　　公布时间：2017年7月4日<BR><BR> 
+　　目的：严厉打击以恶劣采集为内容主要来源的网站<BR><BR> 
+　　内容说明：为了给优质原创内容提供更多展示机会，严厉打击以恶劣采集为内容主要来源的网站，同时百度搜索将从索引库中彻底清除恶劣采集链接。对恶劣采集的零容忍，算法会例行产出惩罚数据，同时会根据情况随时调整迭代。<BR><BR> 
+　　算法的目标是没有价值的采集站，一旦中招短期没办法解决。有的站长也推测，做一些内容增益的措施去补救可能对恢复有作用，但也不保证效果，时间上保守估计也需要2-3个月。<BR><BR> 
+　　网友们也总结出来，大站影响微乎其微，中等站点影响较小，最遭殃的就是小站。不过，也有部分站长反馈，算法是有可能误判的。因为到目前为止，采集、转载的内容排名比原创好还是很常见的。<BR><BR> 
+　　3、《百度清风算法》<BR><BR> 
+　　公布时间：2017年9月14日<BR><BR> 
+　　目的：严惩网页标题作弊<BR><BR> 
+　　内容说明：打击通过网页标题作弊，欺骗用户并获得点击的行为。<BR><BR> 
+　　标题作弊主要指，标题内容虚假、或在标题中故意堆砌关键词等行为。<BR><BR> 
+　　标题内容虚假指，标题表述的内容与网页内容不相符，有欺骗用户嫌疑。<BR><BR> 
+　　标题故意堆砌指，在标题中多次重复、过度堆砌关键词。<BR><BR> 
+　　百度清风刮来，却并不清凉。公告说到9月底开始实施算法，有的站长9月中旬就已经收到了请自查的邮件。虽然又是站长叫苦哀嚎一片的声音，但打击的力度让我们也看到了对好的内容的保护。<BR><BR> 
+　　4、《百度闪电算法》<BR><BR> 
+　　公布时间：2017年10月19日<BR><BR> 
+　　目的：优待移动搜索页面加载快速的网页<BR><BR> 
+　　内容说明：“闪电算法”上线，移动搜索页面首屏加载时间将影响搜索排名。移动网页首屏在2秒之内完成打开的，在移动搜索下将获得提升页面评价优待，获得流量倾斜，移动搜索页面首屏加载非常慢（3秒及以上）的网页将会被打压。<BR><BR> 
+　　“闪电算法”主要针对的是首屏的加载时间，因此也建议将网络带宽留给首屏请求；另外也要留意页面浏览体验、资源或功能的易用性、页面是否符合移动端适配等。百度官方建议视网站自身情况，自行优化页面，或使用通用的加速解决方案（如MIP）。<BR><BR> 
+　　5、《百度惊雷算法》<BR><BR> 
+　　公布时间：2017年11月20日<BR><BR> 
+　　目的：严厉打击刷点击作弊行为<BR><BR> 
+　　内容说明：严厉打击通过刷点击，提升网站搜索排序的作弊行为。对存在点击流量作弊的行为进行惩罚，另对有判罚纪录的网站加以严惩，严重者将长期封禁。<BR><BR> 
+　　早前的文章里，小5也提到不同的观点。有人说既然是刷点击刷排名，自然就可以给竞争对手刷。所以有网站会被“陷害”、“误伤”的情况，百度官方估计也有考虑，提出：在此期间如有流量异常，可以到反馈中心投诉。<BR><BR> 
+　　算法一开始出来，大家都感觉是雷声大雨点小，现在从百度的力度来看，应该是没有手软。<BR><BR> 
+　　不少站长会拿百度和360的算法来做比较，一个属自然系，一个走神话风，看似没啥关系，但却都是前后脚出台类似的算法来调整搜索引擎的一些玩法。<BR><BR> 
+　　从大环境来看，算法的存在也是为了进一步的提升用户体验，改善搜索质量，让高质量原创内容的网站能崭露头角，也让合理手段的seo优化，能得到鼓励和发展。<!--/HTMLBUILERPART0--> <br>
+	<br>
+	</p></td>
+	<td>&nbsp;</td>
+	</tr>
+	<tr> 
+	<td height="47">&nbsp;</td>
+	<td><table width="100%" border="0" cellpadding="0" cellspacing="0" class="9">
+	<tr> 
+	<td align="right"><a href="new1044.htm">上一页</a> <a href="index.html">目录页</a> <a href="new1046.htm">下一页</a></td>
+	<td width="150">&nbsp;</td>
+	</tr>
+	</table> 
+	<span class="9"><font color="#CCCCCC">创建时间：2020/9/23 </font></span></td>
+	<td>&nbsp;</td>
+	</tr>
+	</table></td>
+	</tr>
+	</table>
+	</div></td>
+	</tr>
+	</table></td>
+	</tr>
+</table>
+</center>
+</div>
+
+<!-- 底部开始 -->
+<div class="bottomz">
+  <div class="bottomz_xm">
+   <h5>热门城市:</h5>
+   <p>
+  <a href="https://www.kuaipai.me/seo_beijing/" title="北京网站推广" target="_blank">北京网站推广</a>
+  <a href="https://www.kuaipai.me/seo_shanghai/" title="上海网站推广" target="_blank">上海网站推广</a>
+  <a href="https://www.kuaipai.me/seo_guangzhou/" title="广州网站推广" target="_blank">广州网站推广</a>
+  <a href="https://www.kuaipai.me/seo_wuhan/" title="武汉网站推广" target="_blank">武汉网站推广</a>
+  <a href="https://www.kuaipai.me/seo_changsha/" title="长沙网站推广" target="_blank">长沙网站推广</a>
+  <a href="https://www.kuaipai.me/seo_xian/" title="西安网站推广" target="_blank">西安网站推广</a>
+
+  
+
+</p>
+  </div>
+    <div class="bottomz_content">
+      <div class="bottomz_left">
+        <img src="./images/logoxxx.png" title="网站推广" alt="网站推广">
+        <h4><span> <img src="./images/iph_03.png" title="网站推广" alt="网站推广"></span>  咨询热线</h4>
+        <p>17771822077</p>
+      </div>
+      <div class="bottomz_mid">
+        <h4>联系我们</h4>
+        <p><span>北京市朝阳区崔各庄乡南春路92号</span><br>
+                           电话：17771822077<br>
+              
+                          网址：www.kuaipai.me</p>
+      </div>
+      <div class="bottomz_right">
+        
+      </div>
+    </div>
+
+    <div class="banquanz">
+    <p></p>
+    </div>
+  </div>
+</body>
+</html>
